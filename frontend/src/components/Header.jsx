@@ -23,17 +23,16 @@ const Header = () => {
   };
 
   const navItems = [
+    { label: 'Work', id: 'work' },
     { label: 'About', id: 'about' },
-    { label: 'Experience', id: 'experience' },
-    { label: 'Projects', id: 'projects' },
-    { label: 'Skills', id: 'skills' },
-    { label: 'Contact', id: 'contact' }
+    { label: 'Content', id: 'content' },
+    { label: 'Connect', id: 'connect' }
   ];
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
@@ -41,9 +40,9 @@ const Header = () => {
           {/* Logo/Name */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-2xl font-bold text-slate-900 hover:text-teal-600 transition-colors"
+            className="text-2xl font-display font-bold text-black hover:text-cherry transition-colors"
           >
-            Vidhi Verma
+            VV
           </button>
 
           {/* Desktop Navigation */}
@@ -52,23 +51,23 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-slate-700 hover:text-teal-600 transition-colors font-medium"
+                className="text-black/70 hover:text-cherry transition-colors font-medium"
               >
                 {item.label}
               </button>
             ))}
             <Button
-              onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white"
+              onClick={() => scrollToSection('connect')}
+              className="bg-cherry hover:bg-cherry-600 text-white font-semibold"
             >
-              Get in Touch
+              Let's Talk
             </Button>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-slate-900 hover:text-teal-600 transition-colors"
+            className="md:hidden text-black hover:text-cherry transition-colors"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -81,16 +80,16 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-left text-slate-700 hover:text-teal-600 transition-colors font-medium py-2"
+                className="text-left text-black/70 hover:text-cherry transition-colors font-medium py-2"
               >
                 {item.label}
               </button>
             ))}
             <Button
-              onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white w-full"
+              onClick={() => scrollToSection('connect')}
+              className="bg-cherry hover:bg-cherry-600 text-white w-full"
             >
-              Get in Touch
+              Let's Talk
             </Button>
           </nav>
         )}

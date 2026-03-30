@@ -1,11 +1,11 @@
 import React from 'react';
-import { ArrowRight, Sparkles, TrendingUp } from 'lucide-react';
+import { ArrowRight, Sparkles, Heart } from 'lucide-react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { portfolioData } from '../mock';
 
 const Hero = () => {
-  const { personal, whyTrustMe } = portfolioData;
+  const { personal, achievements } = portfolioData;
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -15,112 +15,66 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-teal-50 pt-20">
-      <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
-            {/* Badge */}
-            <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-200 px-4 py-2 text-sm font-medium">
-              <Sparkles className="w-4 h-4 mr-2 inline" />
-              Open to Opportunities
-            </Badge>
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-cherry-50 to-brown-50 pt-20 relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-pattern opacity-30"></div>
+      
+      {/* Floating Elements */}
+      <div className="absolute top-20 right-10 w-32 h-32 bg-cherry-200 rounded-full blur-3xl opacity-40 animate-float"></div>
+      <div className="absolute bottom-20 left-10 w-40 h-40 bg-brown-200 rounded-full blur-3xl opacity-30 animate-float" style={{animationDelay: '1s'}}></div>
+      
+      <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
+        <div className="max-w-4xl">
+          {/* Badge */}
+          <Badge className="bg-cherry text-white hover:bg-cherry-600 px-4 py-2 text-sm font-semibold mb-8">
+            <Sparkles className="w-4 h-4 mr-2 inline" />
+            Available for new opportunities
+          </Badge>
 
-            {/* Heading */}
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-                Hey, I'm{' '}
-                <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-                  {personal.name}
-                </span>
-              </h1>
-              <p className="text-2xl lg:text-3xl font-semibold text-slate-700">
-                {personal.tagline}
-              </p>
-            </div>
+          {/* Main Heading */}
+          <h1 className="text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-black leading-tight mb-8">
+            I turn ideas into
+            <span className="block mt-2">
+              <span className="text-cherry">viral content</span>
+            </span>
+          </h1>
 
-            {/* Bio */}
-            <p className="text-lg text-slate-600 leading-relaxed">
-              {personal.bio}
-            </p>
+          {/* Subheading */}
+          <p className="text-xl lg:text-2xl text-black/70 mb-12 max-w-2xl leading-relaxed">
+            {personal.shortIntro}
+          </p>
 
-            {/* Metrics */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {whyTrustMe.highlights.map((highlight, index) => (
-                <div key={index} className="space-y-1">
-                  <div className="text-3xl font-bold text-blue-600">{highlight.metric}</div>
-                  <div className="text-sm text-slate-600">{highlight.label}</div>
-                </div>
-              ))}
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
-              <Button
-                onClick={() => scrollToSection('projects')}
-                size="lg"
-                className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white px-8"
-              >
-                View My Work
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button
-                onClick={() => scrollToSection('contact')}
-                size="lg"
-                variant="outline"
-                className="border-2 border-slate-300 hover:border-blue-600 hover:text-blue-600 px-8"
-              >
-                Get in Touch
-              </Button>
-            </div>
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap gap-4 mb-16">
+            <Button
+              onClick={() => scrollToSection('work')}
+              size="lg"
+              className="bg-cherry hover:bg-cherry-600 text-white px-8 py-6 text-lg font-semibold"
+            >
+              See My Work
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+            <Button
+              onClick={() => scrollToSection('about')}
+              size="lg"
+              variant="outline"
+              className="border-2 border-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold"
+            >
+              About Me
+            </Button>
           </div>
 
-          {/* Right Content - Floating Card */}
-          <div className="relative">
-            <div className="bg-white rounded-2xl shadow-2xl p-8 space-y-6 border border-slate-200 hover:shadow-3xl transition-shadow duration-300">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-teal-600 flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-white" />
+          {/* Achievements Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {achievements.map((achievement, index) => (
+              <div key={index} className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border-2 border-black/5 hover:border-cherry/30 hover:shadow-lg transition-all duration-300">
+                <div className="text-4xl font-display font-bold text-cherry mb-2">
+                  {achievement.metric}
                 </div>
-                <h3 className="text-xl font-bold text-slate-900">Impact Highlights</h3>
+                <div className="text-sm font-semibold text-black mb-1">{achievement.label}</div>
+                <div className="text-xs text-black/60">{achievement.description}</div>
               </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-start gap-3 p-4 bg-blue-50 rounded-lg">
-                  <div className="w-10 h-10 rounded-lg bg-blue-500 flex items-center justify-center flex-shrink-0">
-                    <TrendingUp className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-slate-900">1.5-2M Monthly Impressions</div>
-                    <div className="text-sm text-slate-600">Leading global Twitter/X for Avail</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3 p-4 bg-teal-50 rounded-lg">
-                  <div className="w-10 h-10 rounded-lg bg-teal-500 flex items-center justify-center flex-shrink-0">
-                    <TrendingUp className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-slate-900">200% Engagement Increase</div>
-                    <div className="text-sm text-slate-600">Through content strategy optimization</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3 p-4 bg-blue-50 rounded-lg">
-                  <div className="w-10 h-10 rounded-lg bg-blue-500 flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-slate-900">0 to 7K YouTube Subscribers</div>
-                    <div className="text-sm text-slate-600">Built channel from scratch</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute -z-10 top-10 -right-10 w-72 h-72 bg-teal-200 rounded-full blur-3xl opacity-20"></div>
-            <div className="absolute -z-10 -bottom-10 -left-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-20"></div>
+            ))}
           </div>
         </div>
       </div>

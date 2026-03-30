@@ -12,16 +12,16 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f5f9;
+    background: #fef7f3;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #0d9488, #14b8a6);
+    background: linear-gradient(to bottom, #C31E39, #8B4513);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #0f766e, #0d9488);
+    background: linear-gradient(to bottom, #9C182E, #6F370F);
 }
 
 /* Smooth transitions for interactive elements */
@@ -38,6 +38,23 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-    outline: 2px solid #14b8a6;
+    outline: 2px solid #C31E39;
     outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Grid background pattern */
+.bg-pattern {
+    background-image: 
+        radial-gradient(circle at 2px 2px, rgba(195, 30, 57, 0.05) 1px, transparent 0);
+    background-size: 40px 40px;
 }
