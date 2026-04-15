@@ -39,27 +39,28 @@ export const portfolioData = {
     {
       id: 2,
       title: "Airtribe: YouTube Content That Actually Converts",
-      subtitle: "83K+ Organic Views Through Strategic Storytelling",
-      description: "Scripted and storyboarded YouTube case studies that turned complex business topics into must-watch content. Proving that education can be entertaining.",
-      role: "Scriptwriting, Storyboarding, Content Strategy",
-      challenge: "Make B2B EdTech content engaging enough to go viral organically.",
-      solution: "Developed narrative-driven scripts with hooks that capture attention, storytelling that keeps viewers engaged, and insights that make them share.",
+      subtitle: "Scripted, Shot & Executed with a Lean Team of 3",
+      description: "Led end-to-end video production for Airtribe's YouTube channel - from scripting and storyboarding to shooting and vision alignment. Created narrative-driven case studies that made complex business topics engaging and shareable.",
+      role: "Scriptwriting, Shooting, Storyboarding, Vision Alignment, Execution",
+      challenge: "Create compelling B2B EdTech content with limited resources that could compete with high-production channels.",
+      solution: "Developed a lean production process with a team of 3, focusing on strong storytelling, strategic scripting, and authentic presentation over high-budget production.",
       impact: [
-        "83K+ and 35K+ organic views on hero videos",
-        "Boosted Airtribe's YouTube presence significantly",
-        "Increased brand authority in the EdTech space",
-        "Created a repeatable content formula"
+        "83K+ organic views on hero video",
+        "Built repeatable content production system",
+        "Established Airtribe as thought leader in EdTech",
+        "Drove significant traffic to Airtribe programs"
       ],
       metrics: [
         { value: "83K+", label: "Views on Top Video" },
-        { value: "6K", label: "Subscriber Growth" }
+        { value: "Team of 3", label: "Lean Execution" }
       ],
-      videoEmbed: "https://www.youtube.com/embed/example",
+      videoEmbed: "https://www.youtube.com/embed/jDy4ixzUJ1E",
       images: [
-        "/api/placeholder/800/450",
-        "/api/placeholder/800/450"
+        "https://img.youtube.com/vi/jDy4ixzUJ1E/maxresdefault.jpg",
+        "https://img.youtube.com/vi/1Gz328oew5M/maxresdefault.jpg",
+        "https://img.youtube.com/vi/2aCbAitBS1o/maxresdefault.jpg"
       ],
-      tags: ["YouTube", "Scriptwriting", "Video Strategy", "B2B Content"]
+      tags: ["YouTube", "Scriptwriting", "Video Production", "B2B Content", "Storyboarding"]
     },
     {
       id: 3,
@@ -110,6 +111,32 @@ export const portfolioData = {
         "/api/placeholder/600/800"
       ],
       tags: ["Meme Marketing", "Instagram", "B2B", "Trend Spotting"]
+    },
+    {
+      id: 5,
+      title: "Podcast Production & Hosting",
+      subtitle: "Organizing Conversations That Matter",
+      description: "Organized and produced podcast episodes featuring industry leaders and experts, creating valuable content that drives thought leadership and community engagement.",
+      role: "Podcast Organization, Production, Host Coordination",
+      challenge: "Create compelling long-form content that keeps audiences engaged and positions Airtribe as an industry thought leader.",
+      solution: "Curated guest lineup, managed production workflow, and ensured each episode delivered actionable insights while maintaining conversational authenticity.",
+      impact: [
+        "Built consistent podcast series",
+        "Featured industry thought leaders",
+        "Expanded content format diversity",
+        "Strengthened brand authority"
+      ],
+      metrics: [
+        { value: "4+", label: "Episodes Produced" },
+        { value: "High", label: "Audience Retention" }
+      ],
+      videoEmbed: "https://www.youtube.com/embed/jyzk702zHRc",
+      images: [
+        "https://img.youtube.com/vi/jyzk702zHRc/maxresdefault.jpg",
+        "https://img.youtube.com/vi/7L0AO9AF-rk/maxresdefault.jpg",
+        "https://img.youtube.com/vi/V-DdSnxFCG0/maxresdefault.jpg"
+      ],
+      tags: ["Podcast", "Content Production", "Thought Leadership", "Audio Content"]
     }
   ],
   
@@ -117,50 +144,83 @@ export const portfolioData = {
     {
       id: 1,
       platform: "YouTube",
-      title: "This app is beating OLA & Uber",
-      metric: "83K views",
-      image: "/api/placeholder/400/300",
-      type: "video"
+      title: "Airtribe Case Study Video 1",
+      metric: "83K+ views",
+      image: "https://img.youtube.com/vi/jDy4ixzUJ1E/maxresdefault.jpg",
+      type: "video",
+      url: "https://youtu.be/jDy4ixzUJ1E"
     },
     {
       id: 2,
-      platform: "Instagram",
-      title: "Stanley Tools Campaign Post",
-      metric: "12K likes",
-      image: "/api/placeholder/400/400",
-      type: "post"
+      platform: "YouTube",
+      title: "Airtribe Case Study Video 2",
+      metric: "35K+ views",
+      image: "https://img.youtube.com/vi/1Gz328oew5M/maxresdefault.jpg",
+      type: "video",
+      url: "https://youtu.be/1Gz328oew5M"
     },
     {
       id: 3,
       platform: "YouTube",
-      title: "Can Zepto BEAT Zomato?",
-      metric: "35K views",
-      image: "/api/placeholder/400/300",
-      type: "video"
+      title: "Airtribe Case Study Video 3",
+      metric: "High engagement",
+      image: "https://img.youtube.com/vi/2aCbAitBS1o/maxresdefault.jpg",
+      type: "video",
+      url: "https://youtu.be/2aCbAitBS1o"
     },
     {
       id: 4,
-      platform: "Instagram",
-      title: "POV: Standup Meeting Types",
-      metric: "High engagement",
-      image: "/api/placeholder/400/400",
-      type: "reel"
+      platform: "YouTube",
+      title: "Airtribe Case Study Video 4",
+      metric: "Viral reach",
+      image: "https://img.youtube.com/vi/tI4lA-zFvW4/maxresdefault.jpg",
+      type: "video",
+      url: "https://youtu.be/tI4lA-zFvW4"
     },
     {
       id: 5,
-      platform: "Instagram",
-      title: "Un Pop-up Event",
-      metric: "Community buzz",
-      image: "/api/placeholder/400/500",
-      type: "story"
+      platform: "YouTube",
+      title: "Airtribe Case Study Video 5",
+      metric: "Strong views",
+      image: "https://img.youtube.com/vi/6bKq3X5qEdw/maxresdefault.jpg",
+      type: "video",
+      url: "https://youtu.be/6bKq3X5qEdw"
     },
     {
       id: 6,
-      platform: "LinkedIn",
-      title: "Growth Strategy Post",
-      metric: "13K+ reach",
-      image: "/api/placeholder/400/300",
-      type: "post"
+      platform: "YouTube",
+      title: "Podcast Episode 1",
+      metric: "Community favorite",
+      image: "https://img.youtube.com/vi/jyzk702zHRc/maxresdefault.jpg",
+      type: "video",
+      url: "https://youtu.be/jyzk702zHRc"
+    },
+    {
+      id: 7,
+      platform: "YouTube",
+      title: "Podcast Episode 2",
+      metric: "Insightful conversation",
+      image: "https://img.youtube.com/vi/7L0AO9AF-rk/maxresdefault.jpg",
+      type: "video",
+      url: "https://youtu.be/7L0AO9AF-rk"
+    },
+    {
+      id: 8,
+      platform: "YouTube",
+      title: "Podcast Episode 3",
+      metric: "Deep dive",
+      image: "https://img.youtube.com/vi/V-DdSnxFCG0/maxresdefault.jpg",
+      type: "video",
+      url: "https://youtu.be/V-DdSnxFCG0"
+    },
+    {
+      id: 9,
+      platform: "YouTube",
+      title: "Podcast Episode 4",
+      metric: "Thought leadership",
+      image: "https://img.youtube.com/vi/gIXRefMVDxc/maxresdefault.jpg",
+      type: "video",
+      url: "https://youtu.be/gIXRefMVDxc"
     }
   ],
   

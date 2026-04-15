@@ -42,8 +42,11 @@ const ContentShowcase = () => {
             const gridClass = isLarge ? 'md:col-span-2 md:row-span-2' : '';
 
             return (
-              <div
+              <a
                 key={item.id}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group relative overflow-hidden rounded-2xl border-3 border-black/10 hover:border-cherry/50 transition-all duration-300 hover:shadow-2xl cursor-pointer bg-gradient-to-br from-cherry-50 to-brown-50 ${gridClass}`}
               >
                 {/* Image */}
@@ -75,7 +78,7 @@ const ContentShowcase = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
