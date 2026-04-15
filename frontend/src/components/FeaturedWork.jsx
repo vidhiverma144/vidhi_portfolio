@@ -35,11 +35,15 @@ const FeaturedWork = () => {
               <div className={`grid lg:grid-cols-2 gap-8 ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
                 {/* Image Section */}
                 <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <div className="aspect-[4/3] bg-gradient-to-br from-cherry-100 to-brown-100 overflow-hidden">
+                  <div className="aspect-video bg-gradient-to-br from-cherry-100 to-brown-100 overflow-hidden">
                     <img
                       src={project.images[0]}
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      onError={(e) => {
+                        e.target.style.objectFit = 'contain';
+                        e.target.style.padding = '20px';
+                      }}
                     />
                   </div>
                   {/* Floating metric badges */}
