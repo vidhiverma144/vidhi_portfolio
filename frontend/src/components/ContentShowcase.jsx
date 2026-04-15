@@ -35,7 +35,8 @@ const ContentShowcase = () => {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">{contentShowcase.map((item, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          {contentShowcase.map((item, index) => {
             // Determine card size - make first card span 2 columns
             const isLarge = index === 0;
             const gridClass = isLarge ? 'md:col-span-2' : '';
@@ -46,18 +47,14 @@ const ContentShowcase = () => {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group relative overflow-hidden rounded-2xl border-3 border-black/10 hover:border-cherry/50 transition-all duration-300 hover:shadow-2xl cursor-pointer bg-gradient-to-br from-cherry-50 to-brown-50 ${gridClass}`}
+                className={`group relative overflow-hidden rounded-2xl border-3 border-black/10 hover:border-cherry/50 transition-all duration-300 hover:shadow-2xl cursor-pointer bg-black ${gridClass}`}
               >
                 {/* Image */}
-                <div className={`relative ${isLarge ? 'aspect-video' : 'aspect-video'} overflow-hidden bg-gradient-to-br from-cherry-100 to-brown-100`}>
+                <div className="relative aspect-video overflow-hidden bg-black">
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      e.target.style.objectFit = 'contain';
-                      e.target.style.backgroundColor = '#f3f4f6';
-                    }}
                   />
                   
                   {/* Overlay */}
