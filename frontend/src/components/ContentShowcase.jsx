@@ -35,11 +35,10 @@ const ContentShowcase = () => {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-          {contentShowcase.map((item, index) => {
-            // Determine card size - make some cards larger for visual interest
-            const isLarge = index === 0 || index === 3;
-            const gridClass = isLarge ? 'md:col-span-2 md:row-span-2' : '';
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">{contentShowcase.map((item, index) => {
+            // Determine card size - make first card span 2 columns
+            const isLarge = index === 0;
+            const gridClass = isLarge ? 'md:col-span-2' : '';
 
             return (
               <a
@@ -50,11 +49,11 @@ const ContentShowcase = () => {
                 className={`group relative overflow-hidden rounded-2xl border-3 border-black/10 hover:border-cherry/50 transition-all duration-300 hover:shadow-2xl cursor-pointer bg-gradient-to-br from-cherry-50 to-brown-50 ${gridClass}`}
               >
                 {/* Image */}
-                <div className={`relative ${isLarge ? 'aspect-[4/3]' : 'aspect-square'} overflow-hidden`}>
+                <div className={`relative ${isLarge ? 'aspect-[16/9]' : 'aspect-[4/3]'} overflow-hidden bg-gradient-to-br from-cherry-100 to-brown-100`}>
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
                   
                   {/* Overlay */}
