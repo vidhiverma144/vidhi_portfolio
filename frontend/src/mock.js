@@ -5,6 +5,8 @@ export const portfolioData = {
     shortIntro: "I turn ideas into viral content and build communities that actually care.",
     story: "I'm not your typical marketer. I'm the person who spots trends before they're trends, turns memes into marketing gold, and builds communities that feel like home. Whether it's scripting YouTube videos that hit 83K views or creating Instagram campaigns that make people stop scrolling, I thrive on making brands feel human and relatable. I believe in storytelling over selling, relationships over transactions, and data that tells a story worth sharing.",
     email: "vidhi.verma2015@gmail.com",
+    phone: "+91 9315569937",
+    location: "Bengaluru, India",
     linkedin: "https://www.linkedin.com/in/vidhiverma2002/",
     twitter: "https://x.com/0xvidhi",
     image: "/api/placeholder/400/400"
@@ -13,17 +15,42 @@ export const portfolioData = {
   featuredWork: [
     {
       id: 1,
+      title: "Revolt Motors: Holi Campaign That Went Viral",
+      subtitle: "1.6M+ Views - Weaving Brand Ethos with Festival Spirit",
+      description: "Created two Instagram Reels for Revolt Motors' Holi campaign that became the brand's highest-viewed content ever. Blended the vibrant spirit of Holi with Revolt's electric revolution narrative.",
+      role: "Content Strategy, Reel Conceptualization, Campaign Execution",
+      challenge: "Create festival content that feels authentic while staying true to Revolt's electric vehicle brand identity.",
+      solution: "Developed Reels that wove Holi's colorful energy with Revolt's brand ethos of revolution and sustainability, creating content that resonated with both festival emotions and brand values.",
+      impact: [
+        "1.6M views on primary Holi Reel",
+        "1.5M views on secondary Holi Reel",
+        "Became Revolt's highest-viewed content",
+        "Massively amplified brand reach and visibility"
+      ],
+      metrics: [
+        { value: "1.6M", label: "Views on Reel 1" },
+        { value: "1.5M", label: "Views on Reel 2" }
+      ],
+      images: [
+        "/api/placeholder/800/600",
+        "/api/placeholder/800/600"
+      ],
+      tags: ["Instagram Reels", "Campaign Strategy", "Viral Content", "Festival Marketing"]
+    },
+    {
+      id: 2,
       title: "Stanley Tools: Kaam Chalo Nahi, Daudao",
       subtitle: "360° Campaign That Made Tools Cool",
       description: "Created a character-driven campaign that transformed Stanley Tools from 'just another tool brand' to a household name in India. Meet K.C., the guy who never settles for 'good enough.'",
-      role: "Campaign Strategy, Content Creation, Social Media",
+      role: "Campaign Strategy, Content Creation, Social Media, Inception to Execution",
       challenge: "Stanley Tools needed to stand out in a crowded market and connect with a younger, quality-conscious audience.",
-      solution: "Developed a 360° campaign centered around a relatable character (K.C.) who advocates for safer, simpler, and better solutions - just like Stanley Tools.",
+      solution: "Developed a 360° campaign centered around a relatable character (K.C.) who advocates for safer, simpler, and better solutions - just like Stanley Tools. Led the campaign from inception to ideation to execution.",
       impact: [
-        "Enhanced brand awareness and recall",
+        "Enhanced brand awareness and recall significantly",
         "12K+ likes on hero content pieces",
         "Contributed to measurable increase in sales",
-        "Positioned Stanley as the go-to for reliability"
+        "Positioned Stanley as the go-to for reliability",
+        "Achieved both qualitative and quantitative results"
       ],
       metrics: [
         { value: "12K+", label: "Post Engagement" },
@@ -38,6 +65,32 @@ export const portfolioData = {
     },
     {
       id: 2,
+      title: "Stanley Tools: Kaam Chalo Nahi, Daudao",
+      subtitle: "360° Campaign That Made Tools Cool",
+      description: "Created a character-driven campaign that transformed Stanley Tools from 'just another tool brand' to a household name in India. Meet K.C., the guy who never settles for 'good enough.'",
+      role: "Campaign Strategy, Content Creation, Social Media, Inception to Execution",
+      challenge: "Stanley Tools needed to stand out in a crowded market and connect with a younger, quality-conscious audience.",
+      solution: "Developed a 360° campaign centered around a relatable character (K.C.) who advocates for safer, simpler, and better solutions - just like Stanley Tools. Led the campaign from inception to ideation to execution.",
+      impact: [
+        "Enhanced brand awareness and recall significantly",
+        "12K+ likes on hero content pieces",
+        "Contributed to measurable increase in sales",
+        "Positioned Stanley as the go-to for reliability",
+        "Achieved both qualitative and quantitative results"
+      ],
+      metrics: [
+        { value: "12K+", label: "Post Engagement" },
+        { value: "360°", label: "Campaign Reach" }
+      ],
+      images: [
+        "/api/placeholder/800/600",
+        "/api/placeholder/800/600",
+        "/api/placeholder/800/600"
+      ],
+      tags: ["Campaign Strategy", "Social Media", "Brand Building", "Content Creation"]
+    },
+    {
+      id: 3,
       title: "Airtribe: YouTube Content That Actually Converts",
       subtitle: "Scripted, Shot & Executed with a Lean Team of 3",
       description: "Led end-to-end video production for Airtribe's YouTube channel - from scripting and storyboarding to shooting and vision alignment. Created narrative-driven case studies that made complex business topics engaging and shareable.",
@@ -64,6 +117,32 @@ export const portfolioData = {
     },
     {
       id: 3,
+      title: "Airtribe: YouTube Content That Actually Converts",
+      subtitle: "Scripted, Shot & Executed with a Lean Team of 3",
+      description: "Led end-to-end video production for Airtribe's YouTube channel - from scripting and storyboarding to shooting and vision alignment. Created narrative-driven case studies that made complex business topics engaging and shareable.",
+      role: "Scriptwriting, Shooting, Storyboarding, Vision Alignment, Execution",
+      challenge: "Create compelling B2B EdTech content with limited resources that could compete with high-production channels.",
+      solution: "Developed a lean production process with a team of 3, focusing on strong storytelling, strategic scripting, and authentic presentation over high-budget production.",
+      impact: [
+        "83K+ organic views on hero video",
+        "Built repeatable content production system",
+        "Established Airtribe as thought leader in EdTech",
+        "Drove significant traffic to Airtribe programs"
+      ],
+      metrics: [
+        { value: "83K+", label: "Views on Top Video" },
+        { value: "Team of 3", label: "Lean Execution" }
+      ],
+      videoEmbed: "https://www.youtube.com/embed/jDy4ixzUJ1E",
+      images: [
+        "https://img.youtube.com/vi/jDy4ixzUJ1E/maxresdefault.jpg",
+        "https://img.youtube.com/vi/1Gz328oew5M/maxresdefault.jpg",
+        "https://img.youtube.com/vi/2aCbAitBS1o/maxresdefault.jpg"
+      ],
+      tags: ["YouTube", "Scriptwriting", "Video Production", "B2B Content", "Storyboarding"]
+    },
+    {
+      id: 4,
       title: "Un: Sustainable Fashion Meets Social Buzz",
       subtitle: "Pop-ups That Sold Out Through Instagram Stories",
       description: "Promoted sustainable fashion pop-ups using Instagram Stories and Reels, driving real footfall and revenue while building a community around upcycling.",
@@ -89,6 +168,31 @@ export const portfolioData = {
     },
     {
       id: 4,
+      title: "Un: Sustainable Fashion Meets Social Buzz",
+      subtitle: "Pop-ups That Sold Out Through Instagram Stories",
+      description: "Promoted sustainable fashion pop-ups using Instagram Stories and Reels, driving real footfall and revenue while building a community around upcycling.",
+      role: "Social Media Strategy, Content Creation, Community Building",
+      challenge: "Drive attendance to physical pop-up events in a crowded market.",
+      solution: "Created educational and engaging Instagram content, leveraged user-generated content, and built community buzz that translated to real-world action.",
+      impact: [
+        "Surge in organic attendance at second pop-up",
+        "Directly contributed to revenue goals",
+        "Built loyal brand community",
+        "Increased brand awareness through UGC"
+      ],
+      metrics: [
+        { value: "100%+", label: "Footfall Increase" },
+        { value: "High", label: "UGC Engagement" }
+      ],
+      images: [
+        "/api/placeholder/800/600",
+        "/api/placeholder/800/600",
+        "/api/placeholder/800/600"
+      ],
+      tags: ["Instagram Strategy", "Event Marketing", "Sustainability", "UGC"]
+    },
+    {
+      id: 5,
       title: "Airtribe: Meme Marketing That Actually Works",
       subtitle: "Making B2B Relatable, One Meme at a Time",
       description: "Created humorous, trend-driven meme content for Instagram that made a B2B EdTech brand feel approachable and human.",
@@ -114,6 +218,31 @@ export const portfolioData = {
     },
     {
       id: 5,
+      title: "Airtribe: Meme Marketing That Actually Works",
+      subtitle: "Making B2B Relatable, One Meme at a Time",
+      description: "Created humorous, trend-driven meme content for Instagram that made a B2B EdTech brand feel approachable and human.",
+      role: "Content Creation, Meme Strategy, Community Engagement",
+      challenge: "Make Airtribe's Instagram more engaging and relatable without losing brand authority.",
+      solution: "Developed short-form meme videos based on trending topics and industry pain points that resonated with the target audience.",
+      impact: [
+        "Significant boost in shares and comments",
+        "Positioned Airtribe as relatable and engaging",
+        "Increased overall Instagram engagement",
+        "Built stronger community connection"
+      ],
+      metrics: [
+        { value: "200%+", label: "Engagement Increase" },
+        { value: "Viral", label: "Share Rate" }
+      ],
+      images: [
+        "/api/placeholder/600/800",
+        "/api/placeholder/600/800",
+        "/api/placeholder/600/800"
+      ],
+      tags: ["Meme Marketing", "Instagram", "B2B", "Trend Spotting"]
+    },
+    {
+      id: 6,
       title: "Podcast Production & Hosting",
       subtitle: "Organizing Conversations That Matter",
       description: "Organized and produced podcast episodes featuring industry leaders and experts, creating valuable content that drives thought leadership and community engagement.",
@@ -226,6 +355,11 @@ export const portfolioData = {
   
   achievements: [
     {
+      metric: "1.6M",
+      label: "Views on Single Reel",
+      description: "Revolt Motors Holi"
+    },
+    {
       metric: "83K+",
       label: "YouTube Views",
       description: "on single video"
@@ -236,14 +370,9 @@ export const portfolioData = {
       description: "across platforms"
     },
     {
-      metric: "200%",
-      label: "Engagement Boost",
-      description: "through strategy"
-    },
-    {
-      metric: "6+",
-      label: "Brands Managed",
-      description: "simultaneously"
+      metric: "360°",
+      label: "Campaigns Led",
+      description: "inception to execution"
     }
   ],
   
