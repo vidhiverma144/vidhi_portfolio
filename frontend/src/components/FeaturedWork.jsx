@@ -34,27 +34,60 @@ const FeaturedWork = () => {
             >
               <div className={`grid lg:grid-cols-2 gap-8 ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
                 {/* Image Section */}
-                <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''} flex flex-col h-full`}>
-                  <div className="relative w-full h-full min-h-[400px] bg-white rounded-lg overflow-hidden border-2 border-black/10">
-                    <img
-                      src={project.images[0]}
-                      alt={project.title}
-                      className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  {/* Metric badges - BELOW IMAGE */}
-                  <div className="flex gap-3 mt-4 flex-wrap">
-                    {project.metrics.map((metric, idx) => (
-                      <div
-                        key={idx}
-                        className="bg-white px-5 py-3 rounded-full border-2 border-cherry shadow-md"
-                      >
-                        <span className="font-display font-bold text-cherry text-xl">{metric.value}</span>
-                        <span className="text-sm text-black/70 ml-2">{metric.label}</span>
+                {project.images && project.images.length > 0 && (
+                  <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''} flex flex-col h-full`}>
+                    {/* Ghostwriting Polaroid Stack */}
+                    {project.id === 10 ? (
+                      <div className="relative w-full h-[500px]">
+                        {project.images.map((img, imgIdx) => (
+                          <div
+                            key={imgIdx}
+                            className="absolute bg-white p-4 shadow-2xl"
+                            style={{
+                              width: '85%',
+                              top: `${imgIdx * 25}px`,
+                              left: `${imgIdx * 15}px`,
+                              transform: `rotate(${imgIdx % 2 === 0 ? -2 : 2}deg)`,
+                              zIndex: project.images.length - imgIdx
+                            }}
+                          >
+                            <img
+                              src={img}
+                              alt={`Ghostwriting ${imgIdx + 1}`}
+                              className="w-full h-auto object-contain"
+                            />
+                            <div className="mt-3 text-center font-handwriting text-black/60 text-sm">
+                              LinkedIn Post {imgIdx + 1}
+                            </div>
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    ) : (
+                      /* Regular Image Display */
+                      <>
+                        <div className="relative w-full h-full min-h-[400px] bg-white rounded-lg overflow-hidden border-2 border-black/10">
+                          <img
+                            src={project.images[0]}
+                            alt={project.title}
+                            className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                        {/* Metric badges - BELOW IMAGE */}
+                        <div className="flex gap-3 mt-4 flex-wrap">
+                          {project.metrics.map((metric, idx) => (
+                            <div
+                              key={idx}
+                              className="bg-white px-5 py-3 rounded-full border-2 border-cherry shadow-md"
+                            >
+                              <span className="font-display font-bold text-cherry text-xl">{metric.value}</span>
+                              <span className="text-sm text-black/70 ml-2">{metric.label}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </>
+                    )}
                   </div>
-                </div>
+                )}
 
                 {/* Content Section */}
                 <CardContent className="p-8 lg:p-12 flex flex-col justify-center">

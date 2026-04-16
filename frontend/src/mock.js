@@ -28,7 +28,7 @@ export const portfolioData = {
         "Enhanced reputation as a community-first brand"
       ],
       metrics: [
-        { value: "Multiple", label: "Events Organized" },
+        { value: "40+", label: "Events Organized" },
         { value: "High", label: "Attendee Satisfaction" }
       ],
       images: [
@@ -107,11 +107,9 @@ export const portfolioData = {
       ],
       metrics: [
         { value: "Multiple", label: "Winning Ads" },
-        { value: "High", label: "Performance" }
+        { value: "High ROI", label: "Performance" }
       ],
-      images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zo405ye6_Screenshot%202026-04-15%20at%2010.25.09%E2%80%AFPM.png"
-      ],
+      images: [],
       tags: ["Performance Ads", "Copywriting", "Creative Direction", "Revenue Generation"]
     },
     {
@@ -267,22 +265,26 @@ export const portfolioData = {
       id: 10,
       title: "Ghostwriting for Founders on LinkedIn",
       subtitle: "Building Personal Brands & Thought Leadership",
-      description: "Crafted compelling LinkedIn content for founders, establishing their personal brands and strengthening Airtribe's positioning as an industry leader.",
+      description: "Crafted compelling LinkedIn content for Navneet Sharma (Co-founder, Airtribe), establishing his personal brand and strengthening Airtribe's positioning as an industry leader through authentic storytelling and insights.",
       role: "Ghostwriting, Thought Leadership, Personal Branding",
-      challenge: "Create authentic founder voices while maintaining consistency with brand messaging.",
-      solution: "Developed storytelling-driven posts with insights, personal experiences, and industry perspectives that resonated with the target audience.",
+      challenge: "Create authentic founder voice while maintaining consistency with brand messaging and driving engagement.",
+      solution: "Developed storytelling-driven posts with insights, personal experiences, and industry perspectives that resonated with the target audience - from product analysis to career advice.",
       impact: [
-        "Enhanced founders' personal brands significantly",
+        "Enhanced founder's personal brand significantly",
         "Strengthened Airtribe's brand positioning",
-        "Increased engagement on founder profiles",
-        "Built credibility in EdTech space"
+        "Multiple posts with 100K+ impressions",
+        "Built credibility in EdTech and startup space"
       ],
       metrics: [
-        { value: "11K+", label: "Follower Growth" },
+        { value: "100K+", label: "Post Impressions" },
         { value: "High", label: "Engagement" }
       ],
       images: [
-        "/api/placeholder/800/600"
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zs4d1u01_Screenshot%202026-04-16%20at%2010.34.18%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ue66np7w_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ql5bdybi_Screenshot%202026-04-16%20at%2010.32.48%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/mg9fjlvb_Screenshot%202026-04-16%20at%2010.33.07%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/z1ytf20a_Screenshot%202026-04-16%20at%2010.34.59%E2%80%AFPM.png"
       ],
       tags: ["Ghostwriting", "LinkedIn", "Thought Leadership", "Personal Branding"]
     }

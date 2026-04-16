@@ -1,104 +1,114 @@
 import React from 'react';
-import { Play, Image as ImageIcon, FileText } from 'lucide-react';
-import { portfolioData } from '../mock';
+import { Play } from 'lucide-react';
 
 const ContentShowcase = () => {
-  const { contentShowcase } = portfolioData;
-
-  const getIcon = (type) => {
-    switch (type) {
-      case 'video':
-        return <Play className="w-6 h-6" />;
-      case 'post':
-        return <ImageIcon className="w-6 h-6" />;
-      case 'reel':
-        return <Play className="w-6 h-6" />;
-      default:
-        return <FileText className="w-6 h-6" />;
+  const youtubeVideos = [
+    {
+      title: "This app is beating OLA & Uber",
+      metric: "83K+ views",
+      url: "https://youtu.be/jDy4ixzUJ1E",
+      videoId: "jDy4ixzUJ1E"
+    },
+    {
+      title: "Can Zepto BEAT Zomato?",
+      metric: "35K+ views",
+      url: "https://youtu.be/1Gz328oew5M",
+      videoId: "1Gz328oew5M"
+    },
+    {
+      title: "Mokobara Investment Story",
+      metric: "Case Study",
+      url: "https://youtu.be/2aCbAitBS1o",
+      videoId: "2aCbAitBS1o"
+    },
+    {
+      title: "Is Product Management for you?",
+      metric: "Career Guide",
+      url: "https://youtu.be/tI4lA-zFvW4",
+      videoId: "tI4lA-zFvW4"
+    },
+    {
+      title: "Flipkart Wins GenZ",
+      metric: "Strategy Analysis",
+      url: "https://youtu.be/6bKq3X5qEdw",
+      videoId: "6bKq3X5qEdw"
+    },
+    {
+      title: "PM Career Blueprint with Razorpay",
+      metric: "Podcast",
+      url: "https://youtu.be/jyzk702zHRc",
+      videoId: "jyzk702zHRc"
+    },
+    {
+      title: "Product Management Insights",
+      metric: "Podcast",
+      url: "https://youtu.be/7L0AO9AF-rk",
+      videoId: "7L0AO9AF-rk"
+    },
+    {
+      title: "Building Products at Scale",
+      metric: "Podcast",
+      url: "https://youtu.be/V-DdSnxFCG0",
+      videoId: "V-DdSnxFCG0"
+    },
+    {
+      title: "Product Strategy Deep Dive",
+      metric: "Podcast",
+      url: "https://youtu.be/gIXRefMVDxc",
+      videoId: "gIXRefMVDxc"
     }
-  };
+  ];
 
   return (
-    <section id="content" className="py-24 bg-white">
+    <section id="content" className="py-24 bg-gradient-to-br from-white via-cherry-50/20 to-brown-50/20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="mb-16 text-center">
           <div className="inline-block mb-4">
-            <span className="text-cherry font-display font-semibold text-lg">// Content Wall</span>
+            <span className="text-cherry font-display font-semibold text-lg">// YouTube Content</span>
           </div>
           <h2 className="text-4xl lg:text-6xl font-display font-bold text-black mb-6">
-            Content That Connects
+            Video Content That Educates
           </h2>
           <p className="text-xl text-black/70 max-w-2xl mx-auto">
-            A glimpse into the videos, posts, and campaigns that drove real engagement.
+            Scripted, shot, and produced engaging YouTube content for Airtribe
           </p>
         </div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {contentShowcase.map((item, index) => {
-            // Determine card size - make first card span 2 columns
-            const isLarge = index === 0;
-            const gridClass = isLarge ? 'md:col-span-2' : '';
-
-            return (
-              <a
-                key={item.id}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`group relative overflow-hidden rounded-2xl border-3 border-black/10 hover:border-cherry/50 transition-all duration-300 hover:shadow-2xl cursor-pointer bg-black ${gridClass}`}
-              >
-                {/* Image */}
-                <div className="relative aspect-video overflow-hidden bg-black">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                  />
-                  
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <div className="flex items-center gap-2 mb-2">
-                        <div className="w-8 h-8 bg-cherry rounded-full flex items-center justify-center">
-                          {getIcon(item.type)}
-                        </div>
-                        <span className="text-xs font-bold uppercase tracking-wider">{item.platform}</span>
-                      </div>
-                      <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                      <p className="text-sm text-white/80">{item.metric}</p>
-                    </div>
-                  </div>
-
-                  {/* Platform badge */}
-                  <div className="absolute top-4 right-4">
-                    <span className="bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-black shadow-lg">
-                      {item.platform}
-                    </span>
+        {/* YouTube Video Grid - Uniform Size */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+          {youtubeVideos.map((video, idx) => (
+            <a
+              key={idx}
+              href={video.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block bg-black rounded-xl overflow-hidden border-2 border-black/10 hover:border-cherry hover:shadow-2xl transition-all duration-300"
+            >
+              {/* Thumbnail - Uniform aspect ratio */}
+              <div className="relative aspect-video overflow-hidden bg-black">
+                <img
+                  src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
+                  alt={video.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                {/* Play button overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
+                  <div className="w-16 h-16 bg-cherry rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Play className="w-8 h-8 text-white ml-1" fill="white" />
                   </div>
                 </div>
-              </a>
-            );
-          })}
-        </div>
-
-        {/* CTA */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-gradient-to-r from-cherry-50 to-brown-50 rounded-2xl p-8 border-2 border-black/5">
-            <h3 className="text-2xl font-display font-bold text-black mb-3">
-              Want to see more?
-            </h3>
-            <p className="text-black/70 mb-6">
-              I've got case studies, scripts, and behind-the-scenes content to share.
-            </p>
-            <a
-              href="#connect"
-              className="inline-flex items-center gap-2 bg-cherry hover:bg-cherry-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-            >
-              Let's connect and I'll show you more
+              </div>
+              
+              {/* Video Info */}
+              <div className="p-4 bg-white">
+                <h4 className="font-bold text-black mb-2 group-hover:text-cherry transition-colors line-clamp-2">
+                  {video.title}
+                </h4>
+                <p className="text-sm text-black/60 font-semibold">{video.metric}</p>
+              </div>
             </a>
-          </div>
+          ))}
         </div>
       </div>
     </section>
