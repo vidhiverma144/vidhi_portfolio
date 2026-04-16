@@ -9,7 +9,7 @@ export const portfolioData = {
     location: "Bengaluru, India",
     linkedin: "https://www.linkedin.com/in/vidhiverma2002/",
     twitter: "https://x.com/0xvidhi",
-    image: "/api/placeholder/400/400"
+    image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/kntwt0vh_B957CAF2-7A72-4C8B-9B0D-FB33BD0B4372.jpeg"
   },
   
   featuredWork: [
@@ -186,6 +186,30 @@ export const portfolioData = {
     },
     {
       id: 8,
+      title: "Community Building & Events at Airtribe",
+      subtitle: "Bringing People Together, Offline & Online",
+      description: "Planned and executed community events that strengthened connections between Airtribe and its audience, creating memorable experiences that fostered brand loyalty and engagement.",
+      role: "Event Planning, Community Management, Logistics, Experience Design",
+      challenge: "Build genuine connections with the community beyond digital interactions and create lasting brand impressions.",
+      solution: "Organized thoughtfully designed events that brought together learners, mentors, and industry professionals, creating spaces for networking, learning, and community bonding.",
+      impact: [
+        "Increased brand loyalty through in-person connections",
+        "Strengthened community cohesion and trust",
+        "Created memorable brand experiences",
+        "Enhanced reputation as a community-first brand"
+      ],
+      metrics: [
+        { value: "Multiple", label: "Events Organized" },
+        { value: "High", label: "Attendee Satisfaction" }
+      ],
+      images: [
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/526ufft8_Screenshot%202026-04-15%20at%2010.25.25%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/526ufft8_Screenshot%202026-04-15%20at%2010.25.25%E2%80%AFPM.png"
+      ],
+      tags: ["Community Building", "Event Management", "Networking", "Brand Experience"]
+    },
+    {
+      id: 9,
       title: "Podcast Production & Hosting",
       subtitle: "Organizing Conversations That Matter",
       description: "Organized and produced podcast episodes featuring industry leaders and experts, creating valuable content that drives thought leadership and community engagement.",
