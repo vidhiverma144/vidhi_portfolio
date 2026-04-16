@@ -32,8 +32,14 @@ export const portfolioData = {
         { value: "High", label: "Attendee Satisfaction" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/526ufft8_Screenshot%202026-04-15%20at%2010.25.25%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/526ufft8_Screenshot%202026-04-15%20at%2010.25.25%E2%80%AFPM.png"
+      ],
+      instagramLinks: [
+        "https://www.instagram.com/p/DFpwht5S8bM/",
+        "https://www.instagram.com/p/DFnG4o9pWdR/",
+        "https://www.instagram.com/p/DFXvlnLosx2/",
+        "https://www.instagram.com/p/DD7D4bWJYOj/",
+        "https://www.instagram.com/p/DDZecEkyaH7/"
       ],
       tags: ["Community Building", "Event Management", "Networking", "Brand Experience"]
     },
@@ -57,9 +63,7 @@ export const portfolioData = {
       ],
       videoEmbed: "https://www.youtube.com/embed/jyzk702zHRc",
       images: [
-        "https://img.youtube.com/vi/jyzk702zHRc/maxresdefault.jpg",
-        "https://img.youtube.com/vi/7L0AO9AF-rk/maxresdefault.jpg",
-        "https://img.youtube.com/vi/V-DdSnxFCG0/maxresdefault.jpg"
+        "https://img.youtube.com/vi/jyzk702zHRc/maxresdefault.jpg"
       ],
       tags: ["Podcast", "Content Production", "Thought Leadership", "Audio Content"]
     },
@@ -83,9 +87,7 @@ export const portfolioData = {
       ],
       videoEmbed: "https://www.youtube.com/embed/jDy4ixzUJ1E",
       images: [
-        "https://img.youtube.com/vi/jDy4ixzUJ1E/maxresdefault.jpg",
-        "https://img.youtube.com/vi/1Gz328oew5M/maxresdefault.jpg",
-        "https://img.youtube.com/vi/2aCbAitBS1o/maxresdefault.jpg"
+        "https://img.youtube.com/vi/jDy4ixzUJ1E/maxresdefault.jpg"
       ],
       tags: ["YouTube", "Scriptwriting", "Video Production", "B2B Content", "Storyboarding"]
     },
@@ -108,8 +110,7 @@ export const portfolioData = {
         { value: "High", label: "Performance" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zo405ye6_Screenshot%202026-04-15%20at%2010.25.09%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/bsgt5xlw_Screenshot%202026-04-15%20at%2010.25.01%E2%80%AFPM.png"
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zo405ye6_Screenshot%202026-04-15%20at%2010.25.09%E2%80%AFPM.png"
       ],
       tags: ["Performance Ads", "Copywriting", "Creative Direction", "Revenue Generation"]
     },
@@ -132,13 +133,17 @@ export const portfolioData = {
         { value: "1.5M", label: "Views on Reel 2" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/uqbonovx_Screenshot%202026-04-15%20at%2010.24.29%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/uqbonovx_Screenshot%202026-04-15%20at%2010.24.29%E2%80%AFPM.png"
+      ],
+      instagramLinks: [
+        "https://www.instagram.com/reel/C44h6jkvoe9/",
+        "https://www.instagram.com/reel/C42GSUDvmdN/",
+        "https://www.instagram.com/reel/C45_-QEvAWK/"
       ],
       tags: ["Instagram Reels", "Campaign Strategy", "Viral Content", "Festival Marketing"]
     },
     {
-      id: 2,
+      id: 6,
       title: "Stanley Tools: Kaam Chalo Nahi, Daudao",
       subtitle: "360° Campaign That Made Tools Cool",
       description: "Created a character-driven campaign that transformed Stanley Tools from 'just another tool brand' to a household name in India. Meet K.C., the guy who never settles for 'good enough.'",
@@ -149,47 +154,26 @@ export const portfolioData = {
         "Enhanced brand awareness and recall significantly",
         "12K+ likes on hero content pieces",
         "Contributed to measurable increase in sales",
-        "Positioned Stanley as the go-to for reliability",
-        "Achieved both qualitative and quantitative results"
+        "Positioned Stanley as the go-to for reliability"
       ],
       metrics: [
         { value: "12K+", label: "Post Engagement" },
         { value: "360°", label: "Campaign Reach" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/naevc85c_Screenshot%202026-04-15%20at%2010.24.07%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/naevc85c_Screenshot%202026-04-15%20at%2010.24.07%E2%80%AFPM.png"
+      ],
+      instagramLinks: [
+        "https://www.instagram.com/reel/C-kXjJfyrhr/",
+        "https://www.instagram.com/p/C6_XH2RhvOz/",
+        "https://www.instagram.com/reel/C6yfGETy-_p/",
+        "https://www.instagram.com/p/C6GtpHjN0Bs/",
+        "https://www.instagram.com/reel/C-uqsggyb4S/"
       ],
       tags: ["Campaign Strategy", "Social Media", "Brand Building", "Content Creation"]
     },
     {
-      id: 3,
-      title: "Airtribe: YouTube Content That Actually Converts",
-      subtitle: "Scripted, Shot & Executed with a Lean Team of 3",
-      description: "Led end-to-end video production for Airtribe's YouTube channel - from scripting and storyboarding to shooting and vision alignment. Created narrative-driven case studies that made complex business topics engaging and shareable.",
-      role: "Scriptwriting, Shooting, Storyboarding, Vision Alignment, Execution",
-      challenge: "Create compelling B2B EdTech content with limited resources that could compete with high-production channels.",
-      solution: "Developed a lean production process with a team of 3, focusing on strong storytelling, strategic scripting, and authentic presentation over high-budget production.",
-      impact: [
-        "83K+ organic views on hero video",
-        "Built repeatable content production system",
-        "Established Airtribe as thought leader in EdTech",
-        "Drove significant traffic to Airtribe programs"
-      ],
-      metrics: [
-        { value: "83K+", label: "Views on Top Video" },
-        { value: "Team of 3", label: "Lean Execution" }
-      ],
-      videoEmbed: "https://www.youtube.com/embed/jDy4ixzUJ1E",
-      images: [
-        "https://img.youtube.com/vi/jDy4ixzUJ1E/maxresdefault.jpg",
-        "https://img.youtube.com/vi/1Gz328oew5M/maxresdefault.jpg",
-        "https://img.youtube.com/vi/2aCbAitBS1o/maxresdefault.jpg"
-      ],
-      tags: ["YouTube", "Scriptwriting", "Video Production", "B2B Content", "Storyboarding"]
-    },
-    {
-      id: 4,
+      id: 7,
       title: "Un: Sustainable Fashion Meets Social Buzz",
       subtitle: "Pop-ups That Sold Out Through Instagram Stories",
       description: "Promoted sustainable fashion pop-ups using Instagram Stories and Reels, driving real footfall and revenue while building a community around upcycling.",
@@ -207,13 +191,21 @@ export const portfolioData = {
         { value: "High", label: "UGC Engagement" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/t9dcyigp_Screenshot%202026-04-15%20at%2010.23.58%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/t9dcyigp_Screenshot%202026-04-15%20at%2010.23.58%E2%80%AFPM.png"
+      ],
+      instagramLinks: [
+        "https://www.instagram.com/p/C4fqwDJSdzo/",
+        "https://www.instagram.com/reel/C4fCjxFL-l6/",
+        "https://www.instagram.com/p/C4ufp6xS-5S/",
+        "https://www.instagram.com/reel/C5GUWDSyyMQ/",
+        "https://www.instagram.com/reel/C5TqmZBS4NB/",
+        "https://www.instagram.com/reel/C5as6UYyUoL/",
+        "https://www.instagram.com/reel/C5yHW9xJvrv/"
       ],
       tags: ["Instagram Strategy", "Event Marketing", "Sustainability", "UGC"]
     },
     {
-      id: 5,
+      id: 8,
       title: "Airtribe: Meme Marketing That Actually Works",
       subtitle: "Making B2B Relatable, One Meme at a Time",
       description: "Created humorous, trend-driven meme content for Instagram that made a B2B EdTech brand feel approachable and human.",
@@ -231,19 +223,26 @@ export const portfolioData = {
         { value: "Viral", label: "Share Rate" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/hv8w8r6l_Screenshot%202026-04-15%20at%2010.24.40%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/hv8w8r6l_Screenshot%202026-04-15%20at%2010.24.40%E2%80%AFPM.png"
+      ],
+      instagramLinks: [
+        "https://www.instagram.com/reel/DHLndvby1U4/",
+        "https://www.instagram.com/reel/DEXbJR7J8YW/",
+        "https://www.instagram.com/reel/DDrlqstJVrs/",
+        "https://www.instagram.com/reel/DCjge_TT4Ex/",
+        "https://www.instagram.com/reel/DBtfZ6Ko8Sw/",
+        "https://www.instagram.com/reel/DBeA_pIK7A6/"
       ],
       tags: ["Meme Marketing", "Instagram", "B2B", "Trend Spotting"]
     },
     {
-      id: 6,
+      id: 9,
       title: "Airtribe: Instagram Carousels That Educate",
       subtitle: "Visual Learning for Product Managers",
       description: "Designed compelling carousel posts for Airtribe that educated and engaged the community with best practices, frameworks, and insights for Product Managers.",
       role: "Content Strategy, Visual Design, Educational Content",
       challenge: "Transform dense educational content into engaging, swipeable Instagram posts.",
-      solution: "Created visually striking carousel designs with clear messaging, using frameworks and best practices from top companies like Swiggy, Google, and Unacademy.",
+      solution: "Created visually striking carousel designs with clear messaging, using frameworks and best practices from top companies.",
       impact: [
         "Higher swipe-through rates on carousels",
         "Increased saves and shares significantly",
@@ -255,13 +254,17 @@ export const portfolioData = {
         { value: "Educational", label: "Value Add" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/vof2nvud_Screenshot%202026-04-15%20at%2010.24.55%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/vof2nvud_Screenshot%202026-04-15%20at%2010.24.55%E2%80%AFPM.png"
+      ],
+      instagramLinks: [
+        "https://www.instagram.com/p/DF7v5qpKf1I/",
+        "https://www.instagram.com/p/DFej9jzJftD/",
+        "https://www.instagram.com/p/DEU2Y1VJ8gF/"
       ],
       tags: ["Instagram Carousels", "Educational Content", "Design", "Product Management"]
     },
     {
-      id: 7,
+      id: 10,
       title: "Ghostwriting for Founders on LinkedIn",
       subtitle: "Building Personal Brands & Thought Leadership",
       description: "Crafted compelling LinkedIn content for founders, establishing their personal brands and strengthening Airtribe's positioning as an industry leader.",
@@ -279,144 +282,129 @@ export const portfolioData = {
         { value: "High", label: "Engagement" }
       ],
       images: [
-        "/api/placeholder/800/600",
         "/api/placeholder/800/600"
       ],
       tags: ["Ghostwriting", "LinkedIn", "Thought Leadership", "Personal Branding"]
-    },
-    {
-      id: 8,
-      title: "Community Building & Events at Airtribe",
-      subtitle: "Bringing People Together, Offline & Online",
-      description: "Planned and executed community events that strengthened connections between Airtribe and its audience, creating memorable experiences that fostered brand loyalty and engagement.",
-      role: "Event Planning, Community Management, Logistics, Experience Design",
-      challenge: "Build genuine connections with the community beyond digital interactions and create lasting brand impressions.",
-      solution: "Organized thoughtfully designed events that brought together learners, mentors, and industry professionals, creating spaces for networking, learning, and community bonding.",
-      impact: [
-        "Increased brand loyalty through in-person connections",
-        "Strengthened community cohesion and trust",
-        "Created memorable brand experiences",
-        "Enhanced reputation as a community-first brand"
-      ],
-      metrics: [
-        { value: "Multiple", label: "Events Organized" },
-        { value: "High", label: "Attendee Satisfaction" }
-      ],
-      images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/526ufft8_Screenshot%202026-04-15%20at%2010.25.25%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/526ufft8_Screenshot%202026-04-15%20at%2010.25.25%E2%80%AFPM.png"
-      ],
-      tags: ["Community Building", "Event Management", "Networking", "Brand Experience"]
-    },
-    {
-      id: 9,
-      title: "Podcast Production & Hosting",
-      subtitle: "Organizing Conversations That Matter",
-      description: "Organized and produced podcast episodes featuring industry leaders and experts, creating valuable content that drives thought leadership and community engagement.",
-      role: "Podcast Organization, Production, Host Coordination",
-      challenge: "Create compelling long-form content that keeps audiences engaged and positions Airtribe as an industry thought leader.",
-      solution: "Curated guest lineup, managed production workflow, and ensured each episode delivered actionable insights while maintaining conversational authenticity.",
-      impact: [
-        "Built consistent podcast series",
-        "Featured industry thought leaders",
-        "Expanded content format diversity",
-        "Strengthened brand authority"
-      ],
-      metrics: [
-        { value: "4+", label: "Episodes Produced" },
-        { value: "High", label: "Audience Retention" }
-      ],
-      videoEmbed: "https://www.youtube.com/embed/jyzk702zHRc",
-      images: [
-        "https://img.youtube.com/vi/jyzk702zHRc/maxresdefault.jpg",
-        "https://img.youtube.com/vi/7L0AO9AF-rk/maxresdefault.jpg",
-        "https://img.youtube.com/vi/V-DdSnxFCG0/maxresdefault.jpg"
-      ],
-      tags: ["Podcast", "Content Production", "Thought Leadership", "Audio Content"]
     }
   ],
   
   contentShowcase: [
+    // YouTube Videos
     {
       id: 1,
       platform: "YouTube",
-      title: "Airtribe Case Study Video 1",
+      title: "This app is beating OLA & Uber",
       metric: "83K+ views",
       image: "https://img.youtube.com/vi/jDy4ixzUJ1E/hqdefault.jpg",
       type: "video",
       url: "https://youtu.be/jDy4ixzUJ1E"
     },
+    // Stanley Tools
     {
       id: 2,
+      platform: "Instagram",
+      title: "Stanley Tools - K.C. Campaign Reel",
+      metric: "12K+ likes",
+      image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/naevc85c_Screenshot%202026-04-15%20at%2010.24.07%E2%80%AFPM.png",
+      type: "reel",
+      url: "https://www.instagram.com/reel/C-kXjJfyrhr/"
+    },
+    // Revolt Motors
+    {
+      id: 3,
+      platform: "Instagram",
+      title: "Revolt Holi Campaign - 1.6M Views",
+      metric: "1.6M views",
+      image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/uqbonovx_Screenshot%202026-04-15%20at%2010.24.29%E2%80%AFPM.png",
+      type: "reel",
+      url: "https://www.instagram.com/reel/C44h6jkvoe9/"
+    },
+    // Airtribe Meme
+    {
+      id: 4,
+      platform: "Instagram",
+      title: "Airtribe Meme Marketing",
+      metric: "Viral engagement",
+      image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/hv8w8r6l_Screenshot%202026-04-15%20at%2010.24.40%E2%80%AFPM.png",
+      type: "reel",
+      url: "https://www.instagram.com/reel/DHLndvby1U4/"
+    },
+    // YouTube
+    {
+      id: 5,
       platform: "YouTube",
-      title: "Airtribe Case Study Video 2",
+      title: "Can Zepto BEAT Zomato?",
       metric: "35K+ views",
       image: "https://img.youtube.com/vi/1Gz328oew5M/hqdefault.jpg",
       type: "video",
       url: "https://youtu.be/1Gz328oew5M"
     },
+    // Educational Reel
     {
-      id: 3,
+      id: 6,
+      platform: "Instagram",
+      title: "Airtribe Educational Reel",
+      metric: "High saves",
+      image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/vof2nvud_Screenshot%202026-04-15%20at%2010.24.55%E2%80%AFPM.png",
+      type: "reel",
+      url: "https://www.instagram.com/reel/DBglYFRoqPK/"
+    },
+    // Un Fashion
+    {
+      id: 7,
+      platform: "Instagram",
+      title: "Un Sustainable Fashion Pop-up",
+      metric: "Community buzz",
+      image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/t9dcyigp_Screenshot%202026-04-15%20at%2010.23.58%E2%80%AFPM.png",
+      type: "reel",
+      url: "https://www.instagram.com/reel/C4fCjxFL-l6/"
+    },
+    // Community Events
+    {
+      id: 8,
+      platform: "Instagram",
+      title: "Airtribe Community Event",
+      metric: "High attendance",
+      image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/526ufft8_Screenshot%202026-04-15%20at%2010.25.25%E2%80%AFPM.png",
+      type: "post",
+      url: "https://www.instagram.com/p/DFpwht5S8bM/"
+    },
+    // More content
+    {
+      id: 9,
       platform: "YouTube",
-      title: "Airtribe Case Study Video 3",
-      metric: "High engagement",
+      title: "Mokobara Investment Story",
+      metric: "Thought leadership",
       image: "https://img.youtube.com/vi/2aCbAitBS1o/hqdefault.jpg",
       type: "video",
       url: "https://youtu.be/2aCbAitBS1o"
     },
     {
-      id: 4,
-      platform: "YouTube",
-      title: "Airtribe Case Study Video 4",
-      metric: "Viral reach",
-      image: "https://img.youtube.com/vi/tI4lA-zFvW4/hqdefault.jpg",
-      type: "video",
-      url: "https://youtu.be/tI4lA-zFvW4"
+      id: 10,
+      platform: "Instagram",
+      title: "Stanley Tools Character Post",
+      metric: "Brand awareness",
+      image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/naevc85c_Screenshot%202026-04-15%20at%2010.24.07%E2%80%AFPM.png",
+      type: "post",
+      url: "https://www.instagram.com/p/C6_XH2RhvOz/"
     },
     {
-      id: 5,
-      platform: "YouTube",
-      title: "Airtribe Case Study Video 5",
-      metric: "Strong views",
-      image: "https://img.youtube.com/vi/6bKq3X5qEdw/hqdefault.jpg",
-      type: "video",
-      url: "https://youtu.be/6bKq3X5qEdw"
+      id: 11,
+      platform: "Instagram",
+      title: "Revolt Holi Reel 2",
+      metric: "1.5M views",
+      image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/uqbonovx_Screenshot%202026-04-15%20at%2010.24.29%E2%80%AFPM.png",
+      type: "reel",
+      url: "https://www.instagram.com/reel/C42GSUDvmdN/"
     },
     {
-      id: 6,
-      platform: "YouTube",
-      title: "Podcast Episode 1",
-      metric: "Community favorite",
-      image: "https://img.youtube.com/vi/jyzk702zHRc/hqdefault.jpg",
-      type: "video",
-      url: "https://youtu.be/jyzk702zHRc"
-    },
-    {
-      id: 7,
-      platform: "YouTube",
-      title: "Podcast Episode 2",
-      metric: "Insightful conversation",
-      image: "https://img.youtube.com/vi/7L0AO9AF-rk/hqdefault.jpg",
-      type: "video",
-      url: "https://youtu.be/7L0AO9AF-rk"
-    },
-    {
-      id: 8,
-      platform: "YouTube",
-      title: "Podcast Episode 3",
-      metric: "Deep dive",
-      image: "https://img.youtube.com/vi/V-DdSnxFCG0/hqdefault.jpg",
-      type: "video",
-      url: "https://youtu.be/V-DdSnxFCG0"
-    },
-    {
-      id: 9,
-      platform: "YouTube",
-      title: "Podcast Episode 4",
-      metric: "Thought leadership",
-      image: "https://img.youtube.com/vi/gIXRefMVDxc/hqdefault.jpg",
-      type: "video",
-      url: "https://youtu.be/gIXRefMVDxc"
+      id: 12,
+      platform: "Instagram",
+      title: "Airtribe Carousel - PM Frameworks",
+      metric: "High saves",
+      image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/vof2nvud_Screenshot%202026-04-15%20at%2010.24.55%E2%80%AFPM.png",
+      type: "post",
+      url: "https://www.instagram.com/p/DF7v5qpKf1I/"
     }
   ],
   
