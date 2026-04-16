@@ -34,8 +34,8 @@ const FeaturedWork = () => {
             >
               <div className={`grid lg:grid-cols-2 gap-8 ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
                 {/* Image Section */}
-                <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <div className="aspect-video bg-gradient-to-br from-cherry-100 to-brown-100 overflow-hidden">
+                <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''} flex flex-col`}>
+                  <div className="aspect-video bg-gradient-to-br from-brown-200 to-cherry-200 overflow-hidden flex-1">
                     <img
                       src={project.images[0]}
                       alt={project.title}
@@ -46,12 +46,12 @@ const FeaturedWork = () => {
                       }}
                     />
                   </div>
-                  {/* Floating metric badges */}
-                  <div className="absolute top-4 left-4 flex gap-2">
+                  {/* Floating metric badges - MOVED BELOW IMAGE */}
+                  <div className="flex gap-2 mt-4 flex-wrap">
                     {project.metrics.map((metric, idx) => (
                       <div
                         key={idx}
-                        className="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full border-2 border-black/10 shadow-lg"
+                        className="bg-white px-4 py-2 rounded-full border-2 border-black/10 shadow-lg"
                       >
                         <span className="font-display font-bold text-cherry text-lg">{metric.value}</span>
                         <span className="text-xs text-black/60 ml-1">{metric.label}</span>

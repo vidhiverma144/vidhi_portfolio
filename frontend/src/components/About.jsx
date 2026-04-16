@@ -60,16 +60,18 @@ const About = () => {
               </div>
 
               <div>
-                <h3 className="text-sm font-bold text-black/60 uppercase tracking-wider mb-3">Special Powers</h3>
-                <div className="flex flex-wrap gap-2">
-                  {skills.special.map((skill, index) => (
-                    <span
-                      key={index}
-                      className="px-4 py-2 bg-brown/10 border-2 border-brown/20 rounded-full text-brown font-semibold text-sm hover:bg-brown hover:text-white transition-all duration-300 cursor-default"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+                <h3 className="text-sm font-bold text-black/60 uppercase tracking-wider mb-3">Standout Skills</h3>
+                <div className="relative overflow-hidden">
+                  <div className="flex gap-2 animate-scroll">
+                    {[...skills.special, ...skills.special].map((skill, index) => (
+                      <span
+                        key={index}
+                        className="px-4 py-2 bg-brown/10 border-2 border-brown/20 rounded-full text-brown font-semibold text-sm hover:bg-brown hover:text-white transition-all duration-300 whitespace-nowrap"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
