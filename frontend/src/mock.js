@@ -58,7 +58,7 @@ export const portfolioData = {
         "Strengthened brand authority"
       ],
       metrics: [
-        { value: "4+", label: "Episodes Produced" },
+        { value: "20+", label: "Episodes Produced" },
         { value: "High", label: "Audience Retention" }
       ],
       videoEmbed: "https://www.youtube.com/embed/jyzk702zHRc",

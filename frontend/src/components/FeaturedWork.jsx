@@ -34,27 +34,23 @@ const FeaturedWork = () => {
             >
               <div className={`grid lg:grid-cols-2 gap-8 ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
                 {/* Image Section */}
-                <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''} flex flex-col`}>
-                  <div className="aspect-video bg-gradient-to-br from-brown-200 to-cherry-200 overflow-hidden flex-1">
+                <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''} flex flex-col h-full`}>
+                  <div className="relative w-full h-full min-h-[400px] bg-white rounded-lg overflow-hidden border-2 border-black/10">
                     <img
                       src={project.images[0]}
                       alt={project.title}
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                      onError={(e) => {
-                        e.target.style.objectFit = 'contain';
-                        e.target.style.padding = '20px';
-                      }}
+                      className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  {/* Floating metric badges - MOVED BELOW IMAGE */}
-                  <div className="flex gap-2 mt-4 flex-wrap">
+                  {/* Metric badges - BELOW IMAGE */}
+                  <div className="flex gap-3 mt-4 flex-wrap">
                     {project.metrics.map((metric, idx) => (
                       <div
                         key={idx}
-                        className="bg-white px-4 py-2 rounded-full border-2 border-black/10 shadow-lg"
+                        className="bg-white px-5 py-3 rounded-full border-2 border-cherry shadow-md"
                       >
-                        <span className="font-display font-bold text-cherry text-lg">{metric.value}</span>
-                        <span className="text-xs text-black/60 ml-1">{metric.label}</span>
+                        <span className="font-display font-bold text-cherry text-xl">{metric.value}</span>
+                        <span className="text-sm text-black/70 ml-2">{metric.label}</span>
                       </div>
                     ))}
                   </div>
@@ -105,21 +101,21 @@ const FeaturedWork = () => {
 
                     {/* Instagram Links */}
                     {project.instagramLinks && project.instagramLinks.length > 0 && (
-                      <div className="mt-4 pt-4 border-t-2 border-black/5">
-                        <p className="text-sm font-semibold text-black/60 mb-3">View Campaign on Instagram:</p>
-                        <div className="flex flex-wrap gap-2">
+                      <div className="mt-6 pt-6 border-t-2 border-black/10">
+                        <p className="text-sm font-bold text-black mb-4">📱 View Campaign Content:</p>
+                        <div className="grid grid-cols-2 gap-3">
                           {project.instagramLinks.map((link, idx) => (
                             <a
                               key={idx}
                               href={link}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cherry to-pink-500 hover:from-cherry-600 hover:to-pink-600 text-white text-sm font-semibold rounded-lg transition-all duration-300 hover:scale-105"
+                              className="flex items-center justify-center gap-2 px-4 py-3 bg-white border-2 border-cherry hover:bg-cherry hover:text-white text-cherry text-sm font-semibold rounded-lg transition-all duration-300 group"
                             >
-                              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                               </svg>
-                              Post {idx + 1}
+                              <span className="group-hover:underline">View Reel {idx + 1}</span>
                             </a>
                           ))}
                         </div>
