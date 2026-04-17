@@ -13,60 +13,7 @@ export const portfolioData = {
   },
   
   featuredWork: [
-    {
-      id: 3,
-      title: "Ghost Writing and Founder Marketing",
-      subtitle: "Building Personal Brands & Thought Leadership",
-      description: "Crafted compelling LinkedIn content for Navneet Sharma (Co-founder, Airtribe), establishing his personal brand and strengthening Airtribe's positioning through authentic storytelling and insights.",
-      role: "Ghostwriting, Thought Leadership, Personal Branding",
-      challenge: "Create authentic founder voice while maintaining consistency with brand messaging and driving engagement.",
-      solution: "Developed storytelling-driven posts with insights, personal experiences, and industry perspectives that resonated with the target audience.",
-      impact: [
-        "Enhanced founder's personal brand significantly",
-        "Strengthened Airtribe's brand positioning",
-        "Multiple posts with 100K+ impressions"
-      ],
-      metrics: [
-        { value: "100K+", label: "Post Impressions" },
-        { value: "High", label: "Engagement" }
-      ],
-      images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/r8wa7lio_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ql5bdybi_Screenshot%202026-04-16%20at%2010.32.48%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zs4d1u01_Screenshot%202026-04-16%20at%2010.34.18%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ue66np7w_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/mg9fjlvb_Screenshot%202026-04-16%20at%2010.33.07%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/z1ytf20a_Screenshot%202026-04-16%20at%2010.34.59%E2%80%AFPM.png"
-      ],
-      tags: ["Ghostwriting", "LinkedIn", "Thought Leadership", "Personal Branding"]
-    },
-    {
-      id: 4,
-      title: "Developer Marketing at Avail",
-      subtitle: "Launching Developer-First Products",
-      description: "Led marketing for Avail, a developer-first blockchain infrastructure company. Orchestrated product launches, crafted developer-focused messaging, and built community engagement strategies.",
-      role: "Product Launch Marketing, Developer Relations, Community Building",
-      challenge: "Market highly technical blockchain products to a developer audience while building trust and credibility.",
-      solution: "Developed launch strategies combining technical content, developer community engagement, and clear product messaging.",
-      impact: [
-        "Successfully launched 3+ major products",
-        "Built developer community engagement",
-        "Positioned Avail as a thought leader in blockchain"
-      ],
-      metrics: [
-        { value: "3+", label: "Product Launches" },
-        { value: "Developer-First", label: "Approach" }
-      ],
-      images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/iebnavc9_Screenshot%202026-04-17%20at%202.40.26%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/afcyxc59_Screenshot%202026-04-17%20at%202.40.59%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/7dwf48rq_Screenshot%202026-04-17%20at%202.40.43%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/8513bh8r_Screenshot%202026-04-17%20at%202.39.02%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/e919bgpc_Screenshot%202026-04-17%20at%202.39.16%E2%80%AFPM.png"
-      ],
-      tags: ["Developer Marketing", "Product Launch", "Blockchain", "Technical Content", "Community"]
-    },
-    {
+        {
       id: 1,
       title: "Community Building & Events at Airtribe",
       subtitle: "40+ Events, 50+ Attendees Each",
@@ -94,8 +41,8 @@ export const portfolioData = {
         "https://www.instagram.com/p/DDZecEkyaH7/"
       ],
       tags: ["Community Building", "Event Hosting", "Fireside Chats", "Networking", "Revenue Generation"]
-    },
-    {
+    },,
+        {
       id: 2,
       title: "Podcast Production & Hosting",
       subtitle: "20+ Episodes - Crafting Conversations That Matter",
@@ -117,8 +64,61 @@ export const portfolioData = {
         "https://img.youtube.com/vi/jyzk702zHRc/maxresdefault.jpg"
       ],
       tags: ["Podcast", "Content Production", "Thought Leadership", "Creative Direction"]
-    },
-    {
+    },,
+        {
+      id: 3,
+      title: "Ghost Writing and Founder Marketing",
+      subtitle: "Building Personal Brands & Thought Leadership",
+      description: "Crafted compelling LinkedIn content for Navneet Sharma (Co-founder, Airtribe), establishing his personal brand and strengthening Airtribe's positioning through authentic storytelling and insights.",
+      role: "Ghostwriting, Thought Leadership, Personal Branding",
+      challenge: "Create authentic founder voice while maintaining consistency with brand messaging and driving engagement.",
+      solution: "Developed storytelling-driven posts with insights, personal experiences, and industry perspectives that resonated with the target audience.",
+      impact: [
+        "Enhanced founder's personal brand significantly",
+        "Strengthened Airtribe's brand positioning",
+        "Multiple posts with 100K+ impressions"
+      ],
+      metrics: [
+        { value: "100K+", label: "Post Impressions" },
+        { value: "High", label: "Engagement" }
+      ],
+      images: [
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/r8wa7lio_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ql5bdybi_Screenshot%202026-04-16%20at%2010.32.48%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zs4d1u01_Screenshot%202026-04-16%20at%2010.34.18%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ue66np7w_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/mg9fjlvb_Screenshot%202026-04-16%20at%2010.33.07%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/z1ytf20a_Screenshot%202026-04-16%20at%2010.34.59%E2%80%AFPM.png"
+      ],
+      tags: ["Ghostwriting", "LinkedIn", "Thought Leadership", "Personal Branding"]
+    },,
+        {
+      id: 4,
+      title: "Developer Marketing at Avail",
+      subtitle: "Launching Developer-First Products",
+      description: "Led marketing for Avail, a developer-first blockchain infrastructure company. Orchestrated product launches, crafted developer-focused messaging, and built community engagement strategies.",
+      role: "Product Launch Marketing, Developer Relations, Community Building",
+      challenge: "Market highly technical blockchain products to a developer audience while building trust and credibility.",
+      solution: "Developed launch strategies combining technical content, developer community engagement, and clear product messaging.",
+      impact: [
+        "Successfully launched 3+ major products",
+        "Built developer community engagement",
+        "Positioned Avail as a thought leader in blockchain"
+      ],
+      metrics: [
+        { value: "3+", label: "Product Launches" },
+        { value: "Developer-First", label: "Approach" }
+      ],
+      images: [
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/iebnavc9_Screenshot%202026-04-17%20at%202.40.26%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/afcyxc59_Screenshot%202026-04-17%20at%202.40.59%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/7dwf48rq_Screenshot%202026-04-17%20at%202.40.43%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/8513bh8r_Screenshot%202026-04-17%20at%202.39.02%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/e919bgpc_Screenshot%202026-04-17%20at%202.39.16%E2%80%AFPM.png"
+      ],
+      tags: ["Developer Marketing", "Product Launch", "Blockchain", "Technical Content", "Community"]
+    },,
+        {
       id: 5,
       title: "Airtribe: YouTube Content That Goes Viral",
       subtitle: "Multiple Videos Hit Viral Status with 83K+ Views",
@@ -140,8 +140,8 @@ export const portfolioData = {
         "https://img.youtube.com/vi/jDy4ixzUJ1E/maxresdefault.jpg"
       ],
       tags: ["YouTube", "Scriptwriting", "Video Production", "B2B Content", "Viral Content"]
-    },
-    {
+    },,
+        {
       id: 6,
       title: "Performance Ads That Drive Revenue",
       subtitle: "Writing, Scripting & Designing Winning Ads",
@@ -165,8 +165,36 @@ export const portfolioData = {
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ei76m1d1_Screenshot%202026-04-17%20at%202.23.53%E2%80%AFPM.png"
       ],
       tags: ["Performance Ads", "Copywriting", "Creative Direction", "Revenue Generation"]
+    },,
+        {
+      id: 7,
+      title: "Airtribe: Instagram Carousels That Educate",
+      subtitle: "Visual Learning for Product Managers",
+      description: "Designed compelling carousel posts for Airtribe that educated and engaged the community with best practices, frameworks, and insights for Product Managers.",
+      role: "Content Strategy, Visual Design, Educational Content",
+      challenge: "Transform dense educational content into engaging, swipeable Instagram posts.",
+      solution: "Created visually striking carousel designs with clear messaging, using frameworks and best practices from top companies.",
+      impact: [
+        "Higher swipe-through rates on carousels",
+        "Increased saves and shares significantly",
+        "Positioned Airtribe as educational authority",
+        "Drove community engagement and learning"
+      ],
+      metrics: [
+        { value: "High", label: "Save Rate" },
+        { value: "Educational", label: "Value Add" }
+      ],
+      images: [
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/k33mztj2_Screenshot%202026-04-17%20at%202.06.50%E2%80%AFPM.png"
+      ],
+      instagramLinks: [
+        "https://www.instagram.com/p/DF7v5qpKf1I/",
+        "https://www.instagram.com/p/DFej9jzJftD/",
+        "https://www.instagram.com/p/DEU2Y1VJ8gF/"
+      ],
+      tags: ["Instagram Carousels", "Educational Content", "Design", "Product Management"]
     },
-    {
+        {
       id: 8,
       title: "Revolt Motors: Holi Campaign That Went Viral",
       subtitle: "1.6M+ Views - Weaving Brand Ethos with Festival Spirit",
@@ -193,8 +221,8 @@ export const portfolioData = {
         "https://www.instagram.com/reel/C45_-QEvAWK/"
       ],
       tags: ["Instagram Reels", "Campaign Strategy", "Viral Content", "Festival Marketing"]
-    },
-    {
+    },,
+        {
       id: 9,
       title: "Stanley Tools: Kaam Chalo Nahi, Daudao",
       subtitle: "1.5 Years of 360° Campaign Success Driving Revenue",
@@ -224,8 +252,8 @@ export const portfolioData = {
         "https://www.instagram.com/reel/C-uqsggyb4S/"
       ],
       tags: ["Campaign Strategy", "360° Marketing", "Social Media", "Revenue Growth", "Brand Building"]
-    },
-    {
+    },,
+        {
       id: 10,
       title: "Un: Sustainable Fashion Meets Social Buzz",
       subtitle: "3,000 Pieces Sold Per Pop-up, 93L Water Saved",
@@ -256,8 +284,8 @@ export const portfolioData = {
         "https://www.instagram.com/reel/C5yHW9xJvrv/"
       ],
       tags: ["Instagram Strategy", "Event Marketing", "Sustainability", "Revenue Generation", "UGC"]
-    },
-    {
+    },,
+        {
       id: 11,
       title: "Airtribe: Meme Marketing That Actually Works",
       subtitle: "Making B2B Relatable, One Meme at a Time",
@@ -288,34 +316,6 @@ export const portfolioData = {
       ],
       tags: ["Meme Marketing", "Instagram", "B2B", "Trend Spotting"]
     },
-    {
-      id: 7,
-      title: "Airtribe: Instagram Carousels That Educate",
-      subtitle: "Visual Learning for Product Managers",
-      description: "Designed compelling carousel posts for Airtribe that educated and engaged the community with best practices, frameworks, and insights for Product Managers.",
-      role: "Content Strategy, Visual Design, Educational Content",
-      challenge: "Transform dense educational content into engaging, swipeable Instagram posts.",
-      solution: "Created visually striking carousel designs with clear messaging, using frameworks and best practices from top companies.",
-      impact: [
-        "Higher swipe-through rates on carousels",
-        "Increased saves and shares significantly",
-        "Positioned Airtribe as educational authority",
-        "Drove community engagement and learning"
-      ],
-      metrics: [
-        { value: "High", label: "Save Rate" },
-        { value: "Educational", label: "Value Add" }
-      ],
-      images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/k33mztj2_Screenshot%202026-04-17%20at%202.06.50%E2%80%AFPM.png"
-      ],
-      instagramLinks: [
-        "https://www.instagram.com/p/DF7v5qpKf1I/",
-        "https://www.instagram.com/p/DFej9jzJftD/",
-        "https://www.instagram.com/p/DEU2Y1VJ8gF/"
-      ],
-      tags: ["Instagram Carousels", "Educational Content", "Design", "Product Management"]
-    }
   ],
   
   achievements: [
