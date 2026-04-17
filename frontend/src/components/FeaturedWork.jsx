@@ -32,13 +32,13 @@ const FeaturedWork = () => {
               key={project.id}
               className="border-3 border-black/10 hover:border-cherry/30 hover:shadow-2xl transition-all duration-500 overflow-hidden group bg-white"
             >
-              <div className={`grid lg:grid-cols-2 gap-8 ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
-                {/* Image Section */}
+              <div className="flex flex-col">
+                {/* Image Section - Always on Top */}
                 {project.images && project.images.length > 0 && (
-                  <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''} flex flex-col h-full`}>
+                  <div className="relative flex flex-col w-full p-8 lg:p-12">
                     {/* Polaroid Stack Layout - Ghostwriting & Performance Ads */}
                     {(project.id === 11 || project.id === 5) ? (
-                      <div className="relative w-full h-[600px]">
+                      <div className="relative w-full h-[600px] mx-auto max-w-3xl">
                         {project.images.map((img, imgIdx) => (
                           <div
                             key={imgIdx}
@@ -63,8 +63,8 @@ const FeaturedWork = () => {
                       </div>
                     ) : (
                       /* Regular Image Display */
-                      <>
-                        <div className="relative w-full h-full min-h-[400px] bg-white rounded-lg overflow-hidden border-2 border-black/10">
+                      <div className="flex flex-col items-center">
+                        <div className="relative w-full max-w-3xl h-full min-h-[400px] bg-white rounded-lg overflow-hidden border-2 border-black/10">
                           <img
                             src={project.images[0]}
                             alt={project.title}
@@ -72,7 +72,7 @@ const FeaturedWork = () => {
                           />
                         </div>
                         {/* Metric badges - BELOW IMAGE */}
-                        <div className="flex gap-3 mt-4 flex-wrap">
+                        <div className="flex gap-3 mt-6 flex-wrap justify-center">
                           {project.metrics.map((metric, idx) => (
                             <div
                               key={idx}
@@ -83,13 +83,13 @@ const FeaturedWork = () => {
                             </div>
                           ))}
                         </div>
-                      </>
+                      </div>
                     )}
                   </div>
                 )}
 
-                {/* Content Section */}
-                <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
+                {/* Content Section - Always Below */}
+                <CardContent className="p-8 lg:p-12 flex flex-col">
                   <div className="space-y-6">
                     {/* Title */}
                     <div>
