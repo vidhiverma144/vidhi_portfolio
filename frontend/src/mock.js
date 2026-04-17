@@ -14,7 +14,7 @@ export const portfolioData = {
   
   featuredWork: [
     {
-      id: 1,
+      id: 3,
       title: "Developer Marketing at Avail",
       subtitle: "Launching Developer-First Products to the World",
       description: "Led marketing efforts for Avail, a developer-first blockchain infrastructure company building tools that empower developers to create scalable applications. Orchestrated product launches, crafted developer-focused messaging, and built community engagement strategies.",
@@ -32,16 +32,16 @@ export const portfolioData = {
         { value: "Developer-First", label: "Approach" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/7dwf48rq_Screenshot%202026-04-17%20at%202.40.43%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/afcyxc59_Screenshot%202026-04-17%20at%202.40.59%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/iebnavc9_Screenshot%202026-04-17%20at%202.40.26%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/e919bgpc_Screenshot%202026-04-17%20at%202.39.16%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/8513bh8r_Screenshot%202026-04-17%20at%202.39.02%E2%80%AFPM.png"
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/afcyxc59_Screenshot%202026-04-17%20at%202.40.59%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/7dwf48rq_Screenshot%202026-04-17%20at%202.40.43%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/8513bh8r_Screenshot%202026-04-17%20at%202.39.02%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/e919bgpc_Screenshot%202026-04-17%20at%202.39.16%E2%80%AFPM.png"
       ],
       tags: ["Developer Marketing", "Product Launch", "Blockchain", "Technical Content", "Community"]
     },
     {
-      id: 2,
+      id: 1,
       title: "Community Building & Events at Airtribe",
       subtitle: "40+ Events, 50+ Attendees Each, Driving Sales & Engagement",
       description: "Planned, hosted, and executed 40+ community events that strengthened connections between Airtribe and its audience. Created memorable experiences from inception to completion - including fireside chats, panel discussions, and networking events. Led guest onboarding, crafted event experiences, and ensured seamless execution that drove both community loyalty and revenue.",
@@ -71,7 +71,7 @@ export const portfolioData = {
       tags: ["Community Building", "Event Hosting", "Fireside Chats", "Networking", "Revenue Generation"]
     },
     {
-      id: 3,
+      id: 2,
       title: "Podcast Production & Hosting",
       subtitle: "20+ Episodes - Crafting Conversations That Matter",
       description: "Produced and shaped 20+ podcast episodes featuring industry leaders and experts. Beyond just organizing, I crafted the entire conversational experience - from drafting thought-provoking questions and providing creative direction to guiding conversations in real-time during recording. Sat through shoots, redirected discussions to keep them engaging, and ensured each episode delivered maximum value.",

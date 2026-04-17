@@ -32,8 +32,99 @@ const FeaturedWork = () => {
               key={project.id}
               className="border-3 border-black/10 hover:border-cherry/30 hover:shadow-2xl transition-all duration-500 overflow-hidden group bg-white"
             >
-              {/* Special Horizontal Layout for Ghostwriting (id: 11) */}
-              {project.id === 11 ? (
+              {/* Special Horizontal Layout for Avail (id: 3) - Collage LEFT, Content RIGHT */}
+              {project.id === 3 ? (
+                <div className="grid lg:grid-cols-2 gap-8">
+                  {/* Improved Collage - LEFT */}
+                  {project.images && project.images.length > 0 && (
+                    <div className="relative flex flex-col w-full p-8 lg:p-12">
+                      <div className="relative w-full h-[800px]">
+                        {project.images.map((img, imgIdx) => {
+                          // Define positions for 5 images - high-metric posts get better visibility
+                          const positions = [
+                            // Image 0: 179K views post - TOP LEFT, most visible
+                            { top: '0px', left: '0%', width: '55%', rotate: '-1deg', zIndex: 5 },
+                            // Image 1: 125K views post - TOP RIGHT, highly visible
+                            { top: '0px', left: '45%', width: '55%', rotate: '1deg', zIndex: 4 },
+                            // Image 2: 66K views post - MIDDLE LEFT
+                            { top: '320px', left: '0%', width: '52%', rotate: '1deg', zIndex: 3 },
+                            // Image 3: 66K views post - MIDDLE RIGHT
+                            { top: '320px', left: '48%', width: '52%', rotate: '-1deg', zIndex: 2 },
+                            // Image 4: 24K views post - BOTTOM CENTER
+                            { top: '640px', left: '24%', width: '52%', rotate: '0deg', zIndex: 1 }
+                          ];
+                          const pos = positions[imgIdx] || positions[0];
+                          
+                          return (
+                            <div
+                              key={imgIdx}
+                              className="absolute bg-white p-2 shadow-xl rounded-lg border-2 border-black/5 hover:scale-105 hover:zIndex-10 transition-all duration-300"
+                              style={{
+                                top: pos.top,
+                                left: pos.left,
+                                width: pos.width,
+                                transform: `rotate(${pos.rotate})`,
+                                zIndex: pos.zIndex
+                              }}
+                            >
+                              <img
+                                src={img}
+                                alt={`Avail Launch ${imgIdx + 1}`}
+                                className="w-full h-auto object-contain rounded"
+                              />
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Content Section - RIGHT */}
+                  <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
+                    <div className="space-y-6">
+                      {/* Title */}
+                      <div>
+                        <h3 className="text-3xl lg:text-4xl font-display font-bold text-black mb-2 group-hover:text-cherry transition-colors">
+                          {project.title}
+                        </h3>
+                        <p className="text-lg text-cherry font-semibold">{project.subtitle}</p>
+                      </div>
+
+                      {/* Description */}
+                      <p className="text-black/80 leading-relaxed">{project.description}</p>
+
+                      {/* Role Badge */}
+                      <div className="bg-cherry-50/50 p-4 rounded-lg border-l-4 border-cherry">
+                        <p className="text-sm font-semibold text-cherry mb-1">MY ROLE</p>
+                        <p className="text-black/70">{project.role}</p>
+                      </div>
+
+                      {/* Impact List */}
+                      <div>
+                        <h4 className="font-bold text-black mb-3">Impact & Results:</h4>
+                        <ul className="space-y-2">
+                          {project.impact.map((item, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <span className="text-cherry mt-1">•</span>
+                              <span className="text-black/70">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, idx) => (
+                          <Badge key={idx} variant="outline" className="border-cherry text-cherry hover:bg-cherry hover:text-white">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
+                </div>
+              ) : project.id === 11 ? (
+                /* Special Horizontal Layout for Ghostwriting (id: 11) */
                 <div className="grid lg:grid-cols-2 gap-8">
                   {/* Content Section - LEFT */}
                   <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
@@ -114,42 +205,7 @@ const FeaturedWork = () => {
                   {/* Image Section - Always on Top */}
                   {project.images && project.images.length > 0 && (
                     <div className="relative flex flex-col w-full p-8 lg:p-12">
-                    {/* Developer Marketing Collage - Avail */}
-                    {project.id === 1 ? (
-                      <div className="relative w-full h-[700px] mx-auto max-w-5xl">
-                        {project.images.map((img, imgIdx) => {
-                          // Define positions for 5 images in a scattered collage
-                          const positions = [
-                            { top: '0px', left: '0%', width: '45%', rotate: '-2deg', zIndex: 5 },
-                            { top: '40px', left: '48%', width: '48%', rotate: '1deg', zIndex: 4 },
-                            { top: '280px', left: '5%', width: '42%', rotate: '2deg', zIndex: 3 },
-                            { top: '320px', left: '50%', width: '46%', rotate: '-1deg', zIndex: 2 },
-                            { top: '140px', left: '25%', width: '44%', rotate: '0deg', zIndex: 1 }
-                          ];
-                          const pos = positions[imgIdx] || positions[0];
-                          
-                          return (
-                            <div
-                              key={imgIdx}
-                              className="absolute bg-white p-2 shadow-xl rounded-lg border-2 border-black/5 hover:scale-105 transition-transform duration-300"
-                              style={{
-                                top: pos.top,
-                                left: pos.left,
-                                width: pos.width,
-                                transform: `rotate(${pos.rotate})`,
-                                zIndex: pos.zIndex
-                              }}
-                            >
-                              <img
-                                src={img}
-                                alt={`Avail Launch ${imgIdx + 1}`}
-                                className="w-full h-auto object-contain rounded"
-                              />
-                            </div>
-                          );
-                        })}
-                      </div>
-                    ) : (project.id === 11 || project.id === 5) ? (
+                    {(project.id === 11 || project.id === 5) ? (
                       /* Polaroid Stack Layout - Ghostwriting & Performance Ads */
                       <div className="relative w-full h-[600px] mx-auto max-w-3xl">
                         {project.images.map((img, imgIdx) => (
