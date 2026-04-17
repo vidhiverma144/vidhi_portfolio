@@ -32,10 +32,88 @@ const FeaturedWork = () => {
               key={project.id}
               className="border-3 border-black/10 hover:border-cherry/30 hover:shadow-2xl transition-all duration-500 overflow-hidden group bg-white"
             >
-              <div className="flex flex-col">
-                {/* Image Section - Always on Top */}
-                {project.images && project.images.length > 0 && (
-                  <div className="relative flex flex-col w-full p-8 lg:p-12">
+              {/* Special Horizontal Layout for Ghostwriting (id: 11) */}
+              {project.id === 11 ? (
+                <div className="grid lg:grid-cols-2 gap-8">
+                  {/* Content Section - LEFT */}
+                  <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
+                    <div className="space-y-6">
+                      {/* Title */}
+                      <div>
+                        <h3 className="text-3xl lg:text-4xl font-display font-bold text-black mb-2 group-hover:text-cherry transition-colors">
+                          {project.title}
+                        </h3>
+                        <p className="text-lg text-cherry font-semibold">{project.subtitle}</p>
+                      </div>
+
+                      {/* Description */}
+                      <p className="text-black/80 leading-relaxed">{project.description}</p>
+
+                      {/* Role Badge */}
+                      <div className="bg-cherry-50/50 p-4 rounded-lg border-l-4 border-cherry">
+                        <p className="text-sm font-semibold text-cherry mb-1">MY ROLE</p>
+                        <p className="text-black/70">{project.role}</p>
+                      </div>
+
+                      {/* Impact List */}
+                      <div>
+                        <h4 className="font-bold text-black mb-3">Impact & Results:</h4>
+                        <ul className="space-y-2">
+                          {project.impact.map((item, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <span className="text-cherry mt-1">•</span>
+                              <span className="text-black/70">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, idx) => (
+                          <Badge key={idx} variant="outline" className="border-cherry text-cherry hover:bg-cherry hover:text-white">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
+
+                  {/* Polaroid Stack - RIGHT */}
+                  {project.images && project.images.length > 0 && (
+                    <div className="relative flex flex-col w-full p-8 lg:p-12">
+                      <div className="relative w-full h-[600px]">
+                        {project.images.map((img, imgIdx) => (
+                          <div
+                            key={imgIdx}
+                            className="absolute bg-white p-3 shadow-2xl rounded-sm"
+                            style={{
+                              width: imgIdx === 0 ? '90%' : '85%',
+                              top: imgIdx === 0 ? '0px' : `${(imgIdx) * 30 + 20}px`,
+                              left: imgIdx === 0 ? '5%' : `${(imgIdx) * 12}px`,
+                              transform: imgIdx === 0 ? 'rotate(0deg)' : `rotate(${imgIdx % 2 === 0 ? -2 : 2}deg)`,
+                              zIndex: project.images.length - imgIdx,
+                              border: '8px solid white',
+                              boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
+                            }}
+                          >
+                            <img
+                              src={img}
+                              alt={`LinkedIn Post ${imgIdx + 1}`}
+                              className="w-full h-auto object-contain"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                /* Vertical Layout for All Other Sections */
+                <div className="flex flex-col">
+                  {/* Image Section - Always on Top */}
+                  {project.images && project.images.length > 0 && (
+                    <div className="relative flex flex-col w-full p-8 lg:p-12">
                     {/* Developer Marketing Collage - Avail */}
                     {project.id === 1 ? (
                       <div className="relative w-full h-[700px] mx-auto max-w-5xl">
@@ -190,6 +268,7 @@ const FeaturedWork = () => {
                   </div>
                 </CardContent>
               </div>
+              )}
             </Card>
           ))}
         </div>

@@ -310,6 +310,7 @@ export const portfolioData = {
         { value: "High", label: "Engagement" }
       ],
       images: [
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/co0kolpt_Screenshot%202026-04-17%20at%204.11.59%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ql5bdybi_Screenshot%202026-04-16%20at%2010.32.48%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zs4d1u01_Screenshot%202026-04-16%20at%2010.34.18%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ue66np7w_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
