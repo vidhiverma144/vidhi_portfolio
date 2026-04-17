@@ -38,20 +38,20 @@ const FeaturedWork = () => {
                   {/* Improved Collage - LEFT */}
                   {project.images && project.images.length > 0 && (
                     <div className="relative flex flex-col w-full p-8 lg:p-12">
-                      <div className="relative w-full h-[800px]">
+                      <div className="relative w-full h-[700px]">
                         {project.images.map((img, imgIdx) => {
                           // Define positions for 5 images - high-metric posts get better visibility
                           const positions = [
                             // Image 0: 179K views post - TOP LEFT, most visible
                             { top: '0px', left: '0%', width: '55%', rotate: '-1deg', zIndex: 5 },
                             // Image 1: 125K views post - TOP RIGHT, highly visible
-                            { top: '0px', left: '45%', width: '55%', rotate: '1deg', zIndex: 4 },
+                            { top: '10px', left: '45%', width: '55%', rotate: '1deg', zIndex: 4 },
                             // Image 2: 66K views post - MIDDLE LEFT
-                            { top: '320px', left: '0%', width: '52%', rotate: '1deg', zIndex: 3 },
-                            // Image 3: 66K views post - MIDDLE RIGHT
-                            { top: '320px', left: '48%', width: '52%', rotate: '-1deg', zIndex: 2 },
+                            { top: '260px', left: '0%', width: '52%', rotate: '1deg', zIndex: 3 },
+                            // Image 3: 66K views post - MIDDLE RIGHT  
+                            { top: '270px', left: '48%', width: '52%', rotate: '-1deg', zIndex: 2 },
                             // Image 4: 24K views post - BOTTOM CENTER
-                            { top: '640px', left: '24%', width: '52%', rotate: '0deg', zIndex: 1 }
+                            { top: '520px', left: '24%', width: '52%', rotate: '0deg', zIndex: 1 }
                           ];
                           const pos = positions[imgIdx] || positions[0];
                           
@@ -124,56 +124,12 @@ const FeaturedWork = () => {
                   </CardContent>
                 </div>
               ) : project.id === 11 ? (
-                /* Special Horizontal Layout for Ghostwriting (id: 11) */
-                <div className="grid lg:grid-cols-2 gap-8">
-                  {/* Content Section - LEFT */}
-                  <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
-                    <div className="space-y-6">
-                      {/* Title */}
-                      <div>
-                        <h3 className="text-3xl lg:text-4xl font-display font-bold text-black mb-2 group-hover:text-cherry transition-colors">
-                          {project.title}
-                        </h3>
-                        <p className="text-lg text-cherry font-semibold">{project.subtitle}</p>
-                      </div>
-
-                      {/* Description */}
-                      <p className="text-black/80 leading-relaxed">{project.description}</p>
-
-                      {/* Role Badge */}
-                      <div className="bg-cherry-50/50 p-4 rounded-lg border-l-4 border-cherry">
-                        <p className="text-sm font-semibold text-cherry mb-1">MY ROLE</p>
-                        <p className="text-black/70">{project.role}</p>
-                      </div>
-
-                      {/* Impact List */}
-                      <div>
-                        <h4 className="font-bold text-black mb-3">Impact & Results:</h4>
-                        <ul className="space-y-2">
-                          {project.impact.map((item, idx) => (
-                            <li key={idx} className="flex items-start gap-2">
-                              <span className="text-cherry mt-1">•</span>
-                              <span className="text-black/70">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      {/* Tags */}
-                      <div className="flex flex-wrap gap-2">
-                        {project.tags.map((tag, idx) => (
-                          <Badge key={idx} variant="outline" className="border-cherry text-cherry hover:bg-cherry hover:text-white">
-                            {tag}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </CardContent>
-
-                  {/* Polaroid Stack - RIGHT */}
+                /* Vertical Layout for Ghostwriting (id: 11) - Polaroid Stack */
+                <div className="flex flex-col">
+                  {/* Polaroid Stack - TOP */}
                   {project.images && project.images.length > 0 && (
                     <div className="relative flex flex-col w-full p-8 lg:p-12">
-                      <div className="relative w-full h-[600px]">
+                      <div className="relative w-full h-[600px] mx-auto max-w-3xl">
                         {project.images.map((img, imgIdx) => (
                           <div
                             key={imgIdx}
@@ -198,6 +154,51 @@ const FeaturedWork = () => {
                       </div>
                     </div>
                   )}
+
+                  {/* Content Section - BELOW */}
+                  <CardContent className="p-8 lg:p-12 flex flex-col">
+                    <div className="space-y-6">
+                      {/* Title */}
+                      <div>
+                        <h3 className="text-3xl lg:text-4xl font-display font-bold text-black mb-2 group-hover:text-cherry transition-colors">
+                          {project.title}
+                        </h3>
+                        <p className="text-lg text-cherry font-semibold">{project.subtitle}</p>
+                      </div>
+
+                      {/* Description */}
+                      <p className="text-black/70 leading-relaxed">{project.description}</p>
+
+                      {/* Role */}
+                      <div className="bg-gradient-to-r from-cherry-50 to-brown-50 rounded-lg p-4 border-2 border-black/5">
+                        <div className="text-xs font-bold text-black/60 uppercase tracking-wider mb-1">My Role</div>
+                        <div className="text-sm font-semibold text-black">{project.role}</div>
+                      </div>
+
+                      {/* Impact Points */}
+                      <div className="space-y-2">
+                        {project.impact.slice(0, 3).map((point, idx) => (
+                          <div key={idx} className="flex items-start gap-3">
+                            <div className="w-1.5 h-1.5 rounded-full bg-cherry mt-2 flex-shrink-0"></div>
+                            <p className="text-sm text-black/70">{point}</p>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, idx) => (
+                          <Badge
+                            key={idx}
+                            variant="secondary"
+                            className="bg-black/5 text-black hover:bg-cherry hover:text-white transition-colors"
+                          >
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
                 </div>
               ) : (
                 /* Vertical Layout for All Other Sections */

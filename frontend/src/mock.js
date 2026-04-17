@@ -190,7 +190,9 @@ export const portfolioData = {
         { value: "1.5 Years", label: "Campaign Duration" },
         { value: "360°", label: "Omnichannel Reach" }
       ],
-      images: [],
+      images: [
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/2gdiddy7_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png"
+      ],
       instagramLinks: [
         "https://www.instagram.com/reel/C-kXjJfyrhr/",
         "https://www.instagram.com/p/C6_XH2RhvOz/",
