@@ -36,8 +36,43 @@ const FeaturedWork = () => {
                 {/* Image Section - Always on Top */}
                 {project.images && project.images.length > 0 && (
                   <div className="relative flex flex-col w-full p-8 lg:p-12">
-                    {/* Polaroid Stack Layout - Ghostwriting & Performance Ads */}
-                    {(project.id === 11 || project.id === 5) ? (
+                    {/* Developer Marketing Collage - Avail */}
+                    {project.id === 1 ? (
+                      <div className="relative w-full h-[700px] mx-auto max-w-5xl">
+                        {project.images.map((img, imgIdx) => {
+                          // Define positions for 5 images in a scattered collage
+                          const positions = [
+                            { top: '0px', left: '0%', width: '45%', rotate: '-2deg', zIndex: 5 },
+                            { top: '40px', left: '48%', width: '48%', rotate: '1deg', zIndex: 4 },
+                            { top: '280px', left: '5%', width: '42%', rotate: '2deg', zIndex: 3 },
+                            { top: '320px', left: '50%', width: '46%', rotate: '-1deg', zIndex: 2 },
+                            { top: '140px', left: '25%', width: '44%', rotate: '0deg', zIndex: 1 }
+                          ];
+                          const pos = positions[imgIdx] || positions[0];
+                          
+                          return (
+                            <div
+                              key={imgIdx}
+                              className="absolute bg-white p-2 shadow-xl rounded-lg border-2 border-black/5 hover:scale-105 transition-transform duration-300"
+                              style={{
+                                top: pos.top,
+                                left: pos.left,
+                                width: pos.width,
+                                transform: `rotate(${pos.rotate})`,
+                                zIndex: pos.zIndex
+                              }}
+                            >
+                              <img
+                                src={img}
+                                alt={`Avail Launch ${imgIdx + 1}`}
+                                className="w-full h-auto object-contain rounded"
+                              />
+                            </div>
+                          );
+                        })}
+                      </div>
+                    ) : (project.id === 11 || project.id === 5) ? (
+                      /* Polaroid Stack Layout - Ghostwriting & Performance Ads */
                       <div className="relative w-full h-[600px] mx-auto max-w-3xl">
                         {project.images.map((img, imgIdx) => (
                           <div

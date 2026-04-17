@@ -31,7 +31,13 @@ export const portfolioData = {
         { value: "3+", label: "Product Launches" },
         { value: "Developer-First", label: "Approach" }
       ],
-      images: [],
+      images: [
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/7dwf48rq_Screenshot%202026-04-17%20at%202.40.43%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/afcyxc59_Screenshot%202026-04-17%20at%202.40.59%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/iebnavc9_Screenshot%202026-04-17%20at%202.40.26%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/e919bgpc_Screenshot%202026-04-17%20at%202.39.16%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/8513bh8r_Screenshot%202026-04-17%20at%202.39.02%E2%80%AFPM.png"
+      ],
       tags: ["Developer Marketing", "Product Launch", "Blockchain", "Technical Content", "Community"]
     },
     {
