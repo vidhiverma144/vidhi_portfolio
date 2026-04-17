@@ -36,8 +36,8 @@ const FeaturedWork = () => {
                 {/* Image Section */}
                 {project.images && project.images.length > 0 && (
                   <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''} flex flex-col h-full`}>
-                    {/* Ghostwriting Polaroid Stack - PhonePay First */}
-                    {project.id === 11 ? (
+                    {/* Polaroid Stack Layout - Ghostwriting & Performance Ads */}
+                    {(project.id === 11 || project.id === 5) ? (
                       <div className="relative w-full h-[600px]">
                         {project.images.map((img, imgIdx) => (
                           <div
@@ -55,7 +55,7 @@ const FeaturedWork = () => {
                           >
                             <img
                               src={img}
-                              alt={`LinkedIn Post ${imgIdx + 1}`}
+                              alt={project.id === 11 ? `LinkedIn Post ${imgIdx + 1}` : `Performance Ad ${imgIdx + 1}`}
                               className="w-full h-auto object-contain"
                             />
                           </div>

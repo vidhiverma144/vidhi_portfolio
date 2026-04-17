@@ -130,7 +130,11 @@ export const portfolioData = {
         { value: "Multiple", label: "Winning Ads" },
         { value: "High ROI", label: "Performance" }
       ],
-      images: [],
+      images: [
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/f7vn14wz_Screenshot%202026-04-17%20at%202.21.05%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/wvi85qpd_Screenshot%202026-04-17%20at%202.22.18%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ei76m1d1_Screenshot%202026-04-17%20at%202.23.53%E2%80%AFPM.png"
+      ],
       tags: ["Performance Ads", "Copywriting", "Creative Direction", "Revenue Generation"]
     },
     {
