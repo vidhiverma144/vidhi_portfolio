@@ -39,9 +39,19 @@ const About = () => {
               </h2>
             </div>
 
-            <p className="text-lg text-black/70 leading-relaxed">
-              {personal.story}
-            </p>
+            <div className="space-y-4">
+              <p className="text-lg text-black/70 leading-relaxed">
+                I'm not your typical marketer. I spot trends before they're trends, turn memes into marketing gold, and build communities that feel like home.
+              </p>
+              
+              <p className="text-lg text-black/70 leading-relaxed">
+                Whether it's scripting YouTube videos that hit 83K views or creating Instagram campaigns that stop the scroll, I thrive on making brands feel human. I've worked across startups, large enterprises, and infrastructure companies—giving me a 360-degree view of social media marketing.
+              </p>
+              
+              <p className="text-lg text-black/70 leading-relaxed">
+                I believe in storytelling over selling, relationships over transactions, and data that tells a story worth sharing.
+              </p>
+            </div>
 
             {/* Skills Tags */}
             <div className="space-y-6">

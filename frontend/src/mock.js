@@ -3,13 +3,13 @@ export const portfolioData = {
     name: "Vidhi Verma",
     tagline: "Growth Marketer & Content Strategist",
     shortIntro: "I turn ideas into viral content and build communities that actually care.",
-    story: "I'm not your typical marketer. I'm the person who spots trends before they're trends, turns memes into marketing gold, and builds communities that feel like home. Whether it's scripting YouTube videos that hit 83K views or creating Instagram campaigns that make people stop scrolling, I thrive on making brands feel human and relatable. I've worked across multiple fields, domains, and platforms - from ad agencies to startups, large enterprises to offshore companies, and infrastructure companies doing developer marketing. This diverse experience gives me a 360-degree understanding of social media marketing across Instagram, YouTube, Twitter, LinkedIn, Reddit, Substack, Medium, newsletters, email marketing, performance ads, and founder marketing. I believe in storytelling over selling, relationships over transactions, and data that tells a story worth sharing.",
+    story: "I'm not your typical marketer. I spot trends before they're trends, turn memes into marketing gold, and build communities that feel like home.\n\nWhether it's scripting YouTube videos that hit 83K views or creating Instagram campaigns that stop the scroll, I thrive on making brands feel human. I've worked across startups, large enterprises, and infrastructure companies—giving me a 360-degree view of social media marketing.\n\nI believe in storytelling over selling, relationships over transactions, and data that tells a story worth sharing.",
     email: "vidhi.verma2015@gmail.com",
     phone: "+91 9315569937",
     location: "Bengaluru, India",
     linkedin: "https://www.linkedin.com/in/vidhiverma2002/",
     twitter: "https://x.com/0xvidhi",
-    image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/kntwt0vh_B957CAF2-7A72-4C8B-9B0D-FB33BD0B4372.jpeg"
+    image: "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/6zieuxt5_image.png"
   },
   
   featuredWork: [
@@ -119,7 +119,7 @@ export const portfolioData = {
       tags: ["Podcast", "Content Production", "Thought Leadership", "Creative Direction"]
     },
     {
-      id: 4,
+      id: 5,
       title: "Airtribe: YouTube Content That Goes Viral",
       subtitle: "Multiple Videos Hit Viral Status with 83K+ Views",
       description: "Led end-to-end video production for Airtribe's YouTube channel with a lean team of 3 - from scripting and storyboarding to shooting and vision alignment. Created narrative-driven case studies that made complex business topics engaging and shareable.",
@@ -142,7 +142,7 @@ export const portfolioData = {
       tags: ["YouTube", "Scriptwriting", "Video Production", "B2B Content", "Viral Content"]
     },
     {
-      id: 5,
+      id: 6,
       title: "Performance Ads That Drive Revenue",
       subtitle: "Writing, Scripting & Designing Winning Ads",
       description: "Contributed to high-performing ad campaigns at Airtribe through end-to-end creative development - from concept and scriptwriting to storyboarding and final execution. Created both video and graphic ads that resonated with audiences and drove significant conversions.",
@@ -167,7 +167,7 @@ export const portfolioData = {
       tags: ["Performance Ads", "Copywriting", "Creative Direction", "Revenue Generation"]
     },
     {
-      id: 6,
+      id: 8,
       title: "Revolt Motors: Holi Campaign That Went Viral",
       subtitle: "1.6M+ Views - Weaving Brand Ethos with Festival Spirit",
       description: "Created two Instagram Reels for Revolt Motors' Holi campaign that became the brand's highest-viewed content ever. Blended the vibrant spirit of Holi with Revolt's electric revolution narrative.",
@@ -195,7 +195,7 @@ export const portfolioData = {
       tags: ["Instagram Reels", "Campaign Strategy", "Viral Content", "Festival Marketing"]
     },
     {
-      id: 7,
+      id: 9,
       title: "Stanley Tools: Kaam Chalo Nahi, Daudao",
       subtitle: "1.5 Years of 360° Campaign Success Driving Revenue",
       description: "Created and executed a character-driven 360° campaign that transformed Stanley Tools from 'just another tool brand' to a household name in India. The campaign ran for 1.5 years, integrating social media (organic & paid), collaborations, and brand partnerships to drive consistent positive revenue traction.",
@@ -226,7 +226,7 @@ export const portfolioData = {
       tags: ["Campaign Strategy", "360° Marketing", "Social Media", "Revenue Growth", "Brand Building"]
     },
     {
-      id: 8,
+      id: 10,
       title: "Un: Sustainable Fashion Meets Social Buzz",
       subtitle: "3,000 Pieces Sold Per Pop-up, 93L Water Saved",
       description: "Promoted sustainable fashion pop-ups using Instagram Stories and Reels, driving massive footfall and revenue while building a community around upcycling. Achieved remarkable sales numbers - 3,000 pieces sold per pop-up - contributing to significant environmental impact with approximately 93 liters of water saved through sustainable clothing choices.",
@@ -258,7 +258,7 @@ export const portfolioData = {
       tags: ["Instagram Strategy", "Event Marketing", "Sustainability", "Revenue Generation", "UGC"]
     },
     {
-      id: 9,
+      id: 11,
       title: "Airtribe: Meme Marketing That Actually Works",
       subtitle: "Making B2B Relatable, One Meme at a Time",
       description: "Created humorous, trend-driven meme content for Instagram that made a B2B EdTech brand feel approachable and human.",
@@ -289,7 +289,7 @@ export const portfolioData = {
       tags: ["Meme Marketing", "Instagram", "B2B", "Trend Spotting"]
     },
     {
-      id: 10,
+      id: 7,
       title: "Airtribe: Instagram Carousels That Educate",
       subtitle: "Visual Learning for Product Managers",
       description: "Designed compelling carousel posts for Airtribe that educated and engaged the community with best practices, frameworks, and insights for Product Managers.",
