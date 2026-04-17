@@ -122,8 +122,8 @@ export const portfolioData = {
       id: 4,
       title: "Airtribe: YouTube Content That Goes Viral",
       subtitle: "Multiple Videos Hit Viral Status with 83K+ Views",
-      description: "Led end-to-end video production for Airtribe's YouTube channel - from scripting and storyboarding to shooting. Created narrative-driven case studies that made complex business topics engaging and shareable.",
-      role: "Scriptwriting, Shooting, Storyboarding, Video Production",
+      description: "Led end-to-end video production for Airtribe's YouTube channel with a lean team of 3 - from scripting and storyboarding to shooting and vision alignment. Created narrative-driven case studies that made complex business topics engaging and shareable.",
+      role: "Scriptwriting, Shooting, Storyboarding, Vision Alignment",
       challenge: "Create compelling B2B EdTech content that could compete with high-production channels and go viral.",
       solution: "Developed a lean production process focusing on strong storytelling, strategic scripting, and authentic presentation.",
       impact: [

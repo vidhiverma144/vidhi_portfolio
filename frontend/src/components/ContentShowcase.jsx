@@ -4,32 +4,32 @@ import { Play } from 'lucide-react';
 const ContentShowcase = () => {
   const strategyVideos = [
     {
-      title: "This app is beating OLA & Uber",
-      metric: "83K+ views",
+      title: "Can Zepto BEAT Zomato and Swiggy?",
+      metric: "87K+ views",
       url: "https://youtu.be/jDy4ixzUJ1E",
       videoId: "jDy4ixzUJ1E"
     },
     {
-      title: "Can Zepto BEAT Zomato?",
-      metric: "35K+ views",
+      title: "Will Reliance DEFEAT Nykaa?",
+      metric: "13K+ views",
       url: "https://youtu.be/1Gz328oew5M",
       videoId: "1Gz328oew5M"
     },
     {
-      title: "Reliance beats Netflix & Amazon",
-      metric: "Strategy Analysis",
+      title: "Reliance is KILLING Netflix and Prime Video",
+      metric: "13K+ views",
       url: "https://youtu.be/2aCbAitBS1o",
       videoId: "2aCbAitBS1o"
     },
     {
-      title: "Mokobara Investment Story",
-      metric: "Case Study",
+      title: "This new app is CRUSHING Ola and Uber!",
+      metric: "37K+ views",
       url: "https://youtu.be/tI4lA-zFvW4",
       videoId: "tI4lA-zFvW4"
     },
     {
-      title: "How Flipkart Wins GenZ",
-      metric: "Strategy Breakdown",
+      title: "Can this INNOVATIVE luggage brand beat VIP?",
+      metric: "5K+ views",
       url: "https://youtu.be/6bKq3X5qEdw",
       videoId: "6bKq3X5qEdw"
     }
@@ -37,26 +37,26 @@ const ContentShowcase = () => {
 
   const podcastEpisodes = [
     {
-      title: "PM Career Blueprint with Razorpay",
-      metric: "Podcast Episode",
+      title: "What it Takes to Earn 1 Cr as a PM?",
+      metric: "57K+ views",
       url: "https://youtu.be/jyzk702zHRc",
       videoId: "jyzk702zHRc"
     },
     {
-      title: "Product Management Deep Dive",
-      metric: "Podcast Episode",
+      title: "How Meesho is WINNING Against Flipkart & Amazon",
+      metric: "9K+ views",
       url: "https://youtu.be/7L0AO9AF-rk",
       videoId: "7L0AO9AF-rk"
     },
     {
-      title: "Building Products at Scale",
-      metric: "Podcast Episode",
+      title: "Decoding India FinTech & PM Careers with Razorpay",
+      metric: "10K+ views",
       url: "https://youtu.be/V-DdSnxFCG0",
       videoId: "V-DdSnxFCG0"
     },
     {
-      title: "Product Strategy & Insights",
-      metric: "Podcast Episode",
+      title: "Flipkart's BIGGEST Consumer Shift - Gen Z",
+      metric: "5K+ views",
       url: "https://youtu.be/gIXRefMVDxc",
       videoId: "gIXRefMVDxc"
     }
