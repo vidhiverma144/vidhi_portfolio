@@ -45,7 +45,7 @@ const About = () => {
               </p>
               
               <p className="text-lg text-black/70 leading-relaxed">
-                Whether it's scripting YouTube videos that hit 83K views or creating Instagram campaigns that stop the scroll, I thrive on making brands feel human. I've worked across startups, large enterprises, and infrastructure companies—giving me a 360-degree view of social media marketing.
+                Whether it's scripting YouTube videos that hit 83K views or creating Instagram campaigns that stop the scroll, I thrive on making brands feel human. I've worked across startups, large enterprises, and infrastructure companies, giving me a 360-degree view of social media marketing.
               </p>
               
               <p className="text-lg text-black/70 leading-relaxed">
