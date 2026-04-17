@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vidhi_portfolio/static/css/main.f85b50c1.css",
+    "main.js": "/vidhi_portfolio/static/js/main.578ee5b8.js",
+    "index.html": "/vidhi_portfolio/index.html",
+    "main.f85b50c1.css.map": "/vidhi_portfolio/static/css/main.f85b50c1.css.map",
+    "main.578ee5b8.js.map": "/vidhi_portfolio/static/js/main.578ee5b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f85b50c1.css",
+    "static/js/main.578ee5b8.js"
+  ]
+}
