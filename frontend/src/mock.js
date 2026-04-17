@@ -191,7 +191,7 @@ export const portfolioData = {
         { value: "360°", label: "Omnichannel Reach" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/2gdiddy7_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png"
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/rwnpz13r_Screenshot%202026-04-17%20at%205.00.20%E2%80%AFPM.png"
       ],
       instagramLinks: [
         "https://www.instagram.com/reel/C-kXjJfyrhr/",
@@ -312,7 +312,7 @@ export const portfolioData = {
         { value: "High", label: "Engagement" }
       ],
       images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/co0kolpt_Screenshot%202026-04-17%20at%204.11.59%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/r8wa7lio_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ql5bdybi_Screenshot%202026-04-16%20at%2010.32.48%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zs4d1u01_Screenshot%202026-04-16%20at%2010.34.18%E2%80%AFPM.png",
         "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ue66np7w_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
