@@ -3,7 +3,7 @@ export const portfolioData = {
     name: "Vidhi Verma",
     tagline: "Growth Marketer & Content Strategist",
     shortIntro: "I turn ideas into viral content and build communities that actually care.",
-    story: "I'm not your typical marketer. I'm the person who spots trends before they're trends, turns memes into marketing gold, and builds communities that feel like home. Whether it's scripting YouTube videos that hit 83K views or creating Instagram campaigns that make people stop scrolling, I thrive on making brands feel human and relatable. I believe in storytelling over selling, relationships over transactions, and data that tells a story worth sharing.",
+    story: "I'm not your typical marketer. I'm the person who spots trends before they're trends, turns memes into marketing gold, and builds communities that feel like home. Whether it's scripting YouTube videos that hit 83K views or creating Instagram campaigns that make people stop scrolling, I thrive on making brands feel human and relatable. I've worked across multiple fields, domains, and platforms - from ad agencies to startups, large enterprises to offshore companies, and infrastructure companies doing developer marketing. This diverse experience gives me a 360-degree understanding of social media marketing across Instagram, YouTube, Twitter, LinkedIn, Reddit, Substack, Medium, newsletters, email marketing, performance ads, and founder marketing. I believe in storytelling over selling, relationships over transactions, and data that tells a story worth sharing.",
     email: "vidhi.verma2015@gmail.com",
     phone: "+91 9315569937",
     location: "Bengaluru, India",
@@ -413,23 +413,23 @@ export const portfolioData = {
   achievements: [
     {
       metric: "1.6M",
-      label: "Views on Single Reel",
-      description: "Revolt Motors Holi"
+      label: "Impressions",
+      description: "Revolt Motors Holi campaign"
     },
     {
       metric: "83K+",
       label: "YouTube Views",
-      description: "on single video"
+      description: "Breakdown strategy video"
     },
     {
-      metric: "19K+",
+      metric: "50K+",
       label: "Followers Grown",
-      description: "across platforms"
+      description: "organically across platforms"
     },
     {
       metric: "360°",
       label: "Campaigns Led",
-      description: "inception to execution"
+      description: "from inception to execution"
     }
   ],
   
