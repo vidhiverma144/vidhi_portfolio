@@ -15,17 +15,43 @@ export const portfolioData = {
   featuredWork: [
     {
       id: 3,
+      title: "Ghost Writing and Founder Marketing",
+      subtitle: "Building Personal Brands & Thought Leadership",
+      description: "Crafted compelling LinkedIn content for Navneet Sharma (Co-founder, Airtribe), establishing his personal brand and strengthening Airtribe's positioning through authentic storytelling and insights.",
+      role: "Ghostwriting, Thought Leadership, Personal Branding",
+      challenge: "Create authentic founder voice while maintaining consistency with brand messaging and driving engagement.",
+      solution: "Developed storytelling-driven posts with insights, personal experiences, and industry perspectives that resonated with the target audience.",
+      impact: [
+        "Enhanced founder's personal brand significantly",
+        "Strengthened Airtribe's brand positioning",
+        "Multiple posts with 100K+ impressions"
+      ],
+      metrics: [
+        { value: "100K+", label: "Post Impressions" },
+        { value: "High", label: "Engagement" }
+      ],
+      images: [
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/r8wa7lio_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ql5bdybi_Screenshot%202026-04-16%20at%2010.32.48%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zs4d1u01_Screenshot%202026-04-16%20at%2010.34.18%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ue66np7w_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/mg9fjlvb_Screenshot%202026-04-16%20at%2010.33.07%E2%80%AFPM.png",
+        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/z1ytf20a_Screenshot%202026-04-16%20at%2010.34.59%E2%80%AFPM.png"
+      ],
+      tags: ["Ghostwriting", "LinkedIn", "Thought Leadership", "Personal Branding"]
+    },
+    {
+      id: 4,
       title: "Developer Marketing at Avail",
-      subtitle: "Launching Developer-First Products to the World",
-      description: "Led marketing efforts for Avail, a developer-first blockchain infrastructure company building tools that empower developers to create scalable applications. Orchestrated product launches, crafted developer-focused messaging, and built community engagement strategies.",
-      role: "Product Launch Marketing, Developer Relations, Community Building, Technical Content",
-      challenge: "Market highly technical blockchain products to a developer audience while building trust and credibility in a competitive space.",
-      solution: "Developed launch strategies combining technical content, developer community engagement, and clear product messaging. Created content that spoke developers' language while highlighting real-world use cases and technical advantages.",
+      subtitle: "Launching Developer-First Products",
+      description: "Led marketing for Avail, a developer-first blockchain infrastructure company. Orchestrated product launches, crafted developer-focused messaging, and built community engagement strategies.",
+      role: "Product Launch Marketing, Developer Relations, Community Building",
+      challenge: "Market highly technical blockchain products to a developer audience while building trust and credibility.",
+      solution: "Developed launch strategies combining technical content, developer community engagement, and clear product messaging.",
       impact: [
         "Successfully launched 3+ major products",
         "Built developer community engagement",
-        "Positioned Avail as a thought leader in blockchain infrastructure",
-        "Created scalable launch frameworks for future products"
+        "Positioned Avail as a thought leader in blockchain"
       ],
       metrics: [
         { value: "3+", label: "Product Launches" },
@@ -43,16 +69,15 @@ export const portfolioData = {
     {
       id: 1,
       title: "Community Building & Events at Airtribe",
-      subtitle: "40+ Events, 50+ Attendees Each, Driving Sales & Engagement",
-      description: "Planned, hosted, and executed 40+ community events that strengthened connections between Airtribe and its audience. Created memorable experiences from inception to completion - including fireside chats, panel discussions, and networking events. Led guest onboarding, crafted event experiences, and ensured seamless execution that drove both community loyalty and revenue.",
-      role: "Event Planning, Hosting, Fireside Chat Moderation, Community Management, Logistics, Experience Design, Guest Onboarding",
-      challenge: "Build genuine connections with the community beyond digital interactions, drive attendance, and convert events into revenue opportunities.",
-      solution: "Designed thoughtfully curated events that brought together learners, mentors, and industry professionals. Hosted engaging fireside chats, moderated discussions, and created spaces for meaningful networking that translated to business outcomes.",
+      subtitle: "40+ Events, 50+ Attendees Each",
+      description: "Planned, hosted, and executed 40+ community events - fireside chats, panel discussions, and networking events that drove both community loyalty and revenue.",
+      role: "Event Planning, Hosting, Fireside Chat Moderation, Community Management",
+      challenge: "Build genuine connections beyond digital interactions and convert events into revenue opportunities.",
+      solution: "Designed curated events bringing together learners, mentors, and industry professionals for meaningful networking.",
       impact: [
         "Organized and hosted 40+ successful events",
         "Consistent 50+ attendee turnout per event",
-        "Closed multiple sales directly from events",
-        "Enhanced reputation as a community-first brand"
+        "Closed multiple sales directly from events"
       ],
       metrics: [
         { value: "40+", label: "Events Organized" },
@@ -74,14 +99,13 @@ export const portfolioData = {
       id: 2,
       title: "Podcast Production & Hosting",
       subtitle: "20+ Episodes - Crafting Conversations That Matter",
-      description: "Produced and shaped 20+ podcast episodes featuring industry leaders and experts. Beyond just organizing, I crafted the entire conversational experience - from drafting thought-provoking questions and providing creative direction to guiding conversations in real-time during recording. Sat through shoots, redirected discussions to keep them engaging, and ensured each episode delivered maximum value.",
-      role: "Podcast Production, Question Crafting, Creative Direction, Conversation Guidance, Host Coordination, Real-time Moderation",
-      challenge: "Create compelling long-form content that keeps audiences engaged while positioning Airtribe as an industry thought leader through authentic conversations.",
-      solution: "Developed a comprehensive production approach: researched guests thoroughly, drafted strategic questions that uncovered unique insights, provided creative direction during shoots, and actively guided conversations to maintain flow and extract the best content.",
+      description: "Produced and shaped 20+ podcast episodes featuring industry leaders. Drafted thought-provoking questions, provided creative direction, and guided conversations in real-time during recording.",
+      role: "Podcast Production, Question Crafting, Creative Direction, Conversation Guidance",
+      challenge: "Create compelling long-form content that positions Airtribe as an industry thought leader.",
+      solution: "Researched guests thoroughly, drafted strategic questions, and actively guided conversations to maintain flow and extract the best content.",
       impact: [
         "Produced 20+ high-quality podcast episodes",
         "Featured prominent industry thought leaders",
-        "Shaped engaging conversations through real-time guidance",
         "Strengthened brand authority and audience retention"
       ],
       metrics: [
@@ -98,14 +122,13 @@ export const portfolioData = {
       id: 4,
       title: "Airtribe: YouTube Content That Goes Viral",
       subtitle: "Multiple Videos Hit Viral Status with 83K+ Views",
-      description: "Led end-to-end video production for Airtribe's YouTube channel - from scripting and storyboarding to shooting and vision alignment. Created narrative-driven case studies that made complex business topics engaging and shareable. Not just one viral video - multiple videos consistently outperformed and drove massive organic reach.",
-      role: "Scriptwriting, Shooting, Storyboarding, Vision Alignment, Video Production",
-      challenge: "Create compelling B2B EdTech content that could compete with high-production channels and consistently go viral.",
-      solution: "Developed a lean but effective production process focusing on strong storytelling, strategic scripting, and authentic presentation. Created a repeatable framework that consistently delivered viral-worthy content.",
+      description: "Led end-to-end video production for Airtribe's YouTube channel - from scripting and storyboarding to shooting. Created narrative-driven case studies that made complex business topics engaging and shareable.",
+      role: "Scriptwriting, Shooting, Storyboarding, Video Production",
+      challenge: "Create compelling B2B EdTech content that could compete with high-production channels and go viral.",
+      solution: "Developed a lean production process focusing on strong storytelling, strategic scripting, and authentic presentation.",
       impact: [
         "Multiple videos achieved viral status organically",
         "83K+ views on top-performing video",
-        "Built repeatable content production system",
         "Established Airtribe as thought leader in EdTech"
       ],
       metrics: [
@@ -292,34 +315,6 @@ export const portfolioData = {
         "https://www.instagram.com/p/DEU2Y1VJ8gF/"
       ],
       tags: ["Instagram Carousels", "Educational Content", "Design", "Product Management"]
-    },
-    {
-      id: 11,
-      title: "Ghostwriting for Founders on LinkedIn",
-      subtitle: "Building Personal Brands & Thought Leadership",
-      description: "Crafted compelling LinkedIn content for Navneet Sharma (Co-founder, Airtribe), establishing his personal brand and strengthening Airtribe's positioning as an industry leader through authentic storytelling and insights.",
-      role: "Ghostwriting, Thought Leadership, Personal Branding",
-      challenge: "Create authentic founder voice while maintaining consistency with brand messaging and driving engagement.",
-      solution: "Developed storytelling-driven posts with insights, personal experiences, and industry perspectives that resonated with the target audience - from product analysis to career advice.",
-      impact: [
-        "Enhanced founder's personal brand significantly",
-        "Strengthened Airtribe's brand positioning",
-        "Multiple posts with 100K+ impressions",
-        "Built credibility in EdTech and startup space"
-      ],
-      metrics: [
-        { value: "100K+", label: "Post Impressions" },
-        { value: "High", label: "Engagement" }
-      ],
-      images: [
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/r8wa7lio_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ql5bdybi_Screenshot%202026-04-16%20at%2010.32.48%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/zs4d1u01_Screenshot%202026-04-16%20at%2010.34.18%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/ue66np7w_Screenshot%202026-04-16%20at%2010.34.02%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/mg9fjlvb_Screenshot%202026-04-16%20at%2010.33.07%E2%80%AFPM.png",
-        "https://customer-assets.emergentagent.com/job_my-work-space-8/artifacts/z1ytf20a_Screenshot%202026-04-16%20at%2010.34.59%E2%80%AFPM.png"
-      ],
-      tags: ["Ghostwriting", "LinkedIn", "Thought Leadership", "Personal Branding"]
     }
   ],
   
