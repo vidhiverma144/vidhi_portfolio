@@ -36,29 +36,28 @@ const FeaturedWork = () => {
                 {/* Image Section */}
                 {project.images && project.images.length > 0 && (
                   <div className={`relative ${index % 2 === 1 ? 'lg:col-start-2' : ''} flex flex-col h-full`}>
-                    {/* Ghostwriting Polaroid Stack */}
-                    {project.id === 10 ? (
-                      <div className="relative w-full h-[500px]">
+                    {/* Ghostwriting Polaroid Stack - PhonePay First */}
+                    {project.id === 11 ? (
+                      <div className="relative w-full h-[600px]">
                         {project.images.map((img, imgIdx) => (
                           <div
                             key={imgIdx}
-                            className="absolute bg-white p-4 shadow-2xl"
+                            className="absolute bg-white p-3 shadow-2xl rounded-sm"
                             style={{
-                              width: '85%',
-                              top: `${imgIdx * 25}px`,
-                              left: `${imgIdx * 15}px`,
-                              transform: `rotate(${imgIdx % 2 === 0 ? -2 : 2}deg)`,
-                              zIndex: project.images.length - imgIdx
+                              width: imgIdx === 0 ? '90%' : '85%',
+                              top: imgIdx === 0 ? '0px' : `${(imgIdx) * 30 + 20}px`,
+                              left: imgIdx === 0 ? '5%' : `${(imgIdx) * 12}px`,
+                              transform: imgIdx === 0 ? 'rotate(0deg)' : `rotate(${imgIdx % 2 === 0 ? -2 : 2}deg)`,
+                              zIndex: project.images.length - imgIdx,
+                              border: '8px solid white',
+                              boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
                             }}
                           >
                             <img
                               src={img}
-                              alt={`Ghostwriting ${imgIdx + 1}`}
+                              alt={`LinkedIn Post ${imgIdx + 1}`}
                               className="w-full h-auto object-contain"
                             />
-                            <div className="mt-3 text-center font-handwriting text-black/60 text-sm">
-                              LinkedIn Post {imgIdx + 1}
-                            </div>
                           </div>
                         ))}
                       </div>

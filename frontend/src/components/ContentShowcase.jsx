@@ -2,7 +2,7 @@ import React from 'react';
 import { Play } from 'lucide-react';
 
 const ContentShowcase = () => {
-  const youtubeVideos = [
+  const strategyVideos = [
     {
       title: "This app is beating OLA & Uber",
       metric: "83K+ views",
@@ -16,48 +16,83 @@ const ContentShowcase = () => {
       videoId: "1Gz328oew5M"
     },
     {
-      title: "Mokobara Investment Story",
-      metric: "Case Study",
+      title: "Reliance beats Netflix & Amazon",
+      metric: "Strategy Analysis",
       url: "https://youtu.be/2aCbAitBS1o",
       videoId: "2aCbAitBS1o"
     },
     {
-      title: "Is Product Management for you?",
-      metric: "Career Guide",
+      title: "Mokobara Investment Story",
+      metric: "Case Study",
       url: "https://youtu.be/tI4lA-zFvW4",
       videoId: "tI4lA-zFvW4"
     },
     {
-      title: "Flipkart Wins GenZ",
-      metric: "Strategy Analysis",
+      title: "How Flipkart Wins GenZ",
+      metric: "Strategy Breakdown",
       url: "https://youtu.be/6bKq3X5qEdw",
       videoId: "6bKq3X5qEdw"
-    },
+    }
+  ];
+
+  const podcastEpisodes = [
     {
       title: "PM Career Blueprint with Razorpay",
-      metric: "Podcast",
+      metric: "Podcast Episode",
       url: "https://youtu.be/jyzk702zHRc",
       videoId: "jyzk702zHRc"
     },
     {
-      title: "Product Management Insights",
-      metric: "Podcast",
+      title: "Product Management Deep Dive",
+      metric: "Podcast Episode",
       url: "https://youtu.be/7L0AO9AF-rk",
       videoId: "7L0AO9AF-rk"
     },
     {
       title: "Building Products at Scale",
-      metric: "Podcast",
+      metric: "Podcast Episode",
       url: "https://youtu.be/V-DdSnxFCG0",
       videoId: "V-DdSnxFCG0"
     },
     {
-      title: "Product Strategy Deep Dive",
-      metric: "Podcast",
+      title: "Product Strategy & Insights",
+      metric: "Podcast Episode",
       url: "https://youtu.be/gIXRefMVDxc",
       videoId: "gIXRefMVDxc"
     }
   ];
+
+  const VideoCard = ({ video }) => (
+    <a
+      href={video.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block bg-black rounded-xl overflow-hidden border-2 border-black/10 hover:border-cherry hover:shadow-2xl transition-all duration-300"
+    >
+      {/* Thumbnail - Uniform aspect ratio */}
+      <div className="relative aspect-video overflow-hidden bg-black">
+        <img
+          src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
+          alt={video.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        />
+        {/* Play button overlay */}
+        <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
+          <div className="w-16 h-16 bg-cherry rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+            <Play className="w-8 h-8 text-white ml-1" fill="white" />
+          </div>
+        </div>
+      </div>
+      
+      {/* Video Info */}
+      <div className="p-4 bg-white">
+        <h4 className="font-bold text-black mb-2 group-hover:text-cherry transition-colors line-clamp-2">
+          {video.title}
+        </h4>
+        <p className="text-sm text-black/60 font-semibold">{video.metric}</p>
+      </div>
+    </a>
+  );
 
   return (
     <section id="content" className="py-24 bg-gradient-to-br from-white via-cherry-50/20 to-brown-50/20">
@@ -75,40 +110,30 @@ const ContentShowcase = () => {
           </p>
         </div>
 
-        {/* YouTube Video Grid - Uniform Size */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
-          {youtubeVideos.map((video, idx) => (
-            <a
-              key={idx}
-              href={video.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block bg-black rounded-xl overflow-hidden border-2 border-black/10 hover:border-cherry hover:shadow-2xl transition-all duration-300"
-            >
-              {/* Thumbnail - Uniform aspect ratio */}
-              <div className="relative aspect-video overflow-hidden bg-black">
-                <img
-                  src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
-                  alt={video.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                {/* Play button overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
-                  <div className="w-16 h-16 bg-cherry rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Play className="w-8 h-8 text-white ml-1" fill="white" />
-                  </div>
-                </div>
-              </div>
-              
-              {/* Video Info */}
-              <div className="p-4 bg-white">
-                <h4 className="font-bold text-black mb-2 group-hover:text-cherry transition-colors line-clamp-2">
-                  {video.title}
-                </h4>
-                <p className="text-sm text-black/60 font-semibold">{video.metric}</p>
-              </div>
-            </a>
-          ))}
+        {/* Strategy Videos Section */}
+        <div className="mb-16">
+          <div className="mb-8">
+            <h3 className="text-3xl font-display font-bold text-black mb-2">Strategy & Case Study Videos</h3>
+            <p className="text-lg text-black/60">Breaking down business strategies and startup success stories</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {strategyVideos.map((video, idx) => (
+              <VideoCard key={idx} video={video} />
+            ))}
+          </div>
+        </div>
+
+        {/* Podcast Section */}
+        <div>
+          <div className="mb-8">
+            <h3 className="text-3xl font-display font-bold text-black mb-2">Podcast Episodes</h3>
+            <p className="text-lg text-black/60">Conversations with industry leaders and product experts</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {podcastEpisodes.map((video, idx) => (
+              <VideoCard key={idx} video={video} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
